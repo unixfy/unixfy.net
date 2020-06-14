@@ -20,6 +20,8 @@ body {
 }
 
 #inside {
+    padding-left: 5%;
+    padding-right: 5%;
     position: absolute;
     z-index: 10;
     margin: 0 auto;
