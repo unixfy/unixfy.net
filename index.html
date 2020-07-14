@@ -147,7 +147,7 @@
 
         // Swap logo image AND enable dark mode when the switch is toggled
         $("#darkModeSwitch").click(function () {
-            if ($("#logoimage").attr("src") == "/assets/img/logo-cropped.svg" && darkmode.isActivated()) {
+            if ($("#logoimage").attr("src") == "/assets/img/logo-cropped.svg") {
                 $('#logoimage').attr("src", "/assets/img/logo-cropped-light.svg");
             } else {
                 $('#logoimage').attr("src", "/assets/img/logo-cropped.svg");
