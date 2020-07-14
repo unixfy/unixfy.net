@@ -36,14 +36,18 @@
     <div class="jumbotron text-lowercase" style="height: 100vh;width: 100vw;margin: 0px;padding:0px !important;">
         <div id="particles-js" class="text-center d-flex justify-content-center align-items-center">
             <div id="inside">
-                <img src="/assets/img/logo-cropped.svg">
-                <p class="lead" style="font-size: 30px;">welcome to my website</p>
+                <img class="logo" id="logoimage" src="/assets/img/logo-cropped.svg">
+                <p class="lead darkmode-text" style="font-size: 30px;">welcome to my website</p>
                 <a class="btn btn-primary btn-lg" role="button" target="_blank" href="https://blog.unixfy.net" style="margin: 5px;">blog</a>
                 <a class="btn btn-primary btn-lg" role="button" target="_blank" href="https://docs.unixfy.net" style="margin: 5px;">docs</a>
                 <a class="btn btn-primary btn-lg" role="button" target="_blank" href="https://support.unixfy.net" style="margin: 5px;">support</a>
                 <a class="btn btn-primary btn-lg" role="button" target="_blank" href="https://my.unixfy.net" style="margin: 5px;">myunixfy</a>
                 <a class="btn btn-primary btn-lg" role="button" target="_blank" href="https://network.unixfy.net" style="margin: 5px;">as139921</a>
                 <a class="btn btn-primary btn-lg" role="button" target="_blank" href="https://unixfyhosting.com" style="margin: 5px;">hosting</a>
+                <div class="custom-control custom-switch" style="padding-top: 30px;">
+                    <input type="checkbox" class="custom-control-input" id="darkModeSwitch">
+                    <label class="custom-control-label darkmode-text" for="darkModeSwitch">dark mode?</label>
+                </div>
             </div>
         </div>
     </div>
@@ -60,7 +64,7 @@
                     image: { src: "", width: 100, height: 100 },
                 },
                 opacity: {
-                    value: 0.5,
+                    value: 0.75,
                     random: false,
                     anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
                 },
@@ -73,7 +77,7 @@
                     enable: true,
                     distance: 150,
                     color: "#2196f3",
-                    opacity: 0.4,
+                    opacity: 0.70,
                     width: 1,
                 },
                 move: {
@@ -117,9 +121,9 @@
     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script>
     <script>
         var options = {
-            bottom: '64px', // default: '32px'
-            right: 'unset', // default: '32px'
-            left: '32px', // default: 'unset'
+            bottom: '32px', // default: '32px'
+            right: '32px', // default: '32px'
+            left: 'unset', // default: 'unset'
             time: '0.3s', // default: '0.3s'
             mixColor: '#fff', // default: '#fff'
             backgroundColor: '#fff',  // default: '#fff'
@@ -130,7 +134,25 @@
             autoMatchOsTheme: true // default: true
         }
         const darkmode = new Darkmode(options);
-        new Darkmode().showWidget();
+
+        // Update the switch if darkmode is on
+        if (darkmode.isActivated()) {
+            document.getElementById("darkModeSwitch").checked = true;
+            
+        }
+        else {
+            document.getElementById("darkModeSwitch").checked = false;
+        }
+
+        // Swap logo image AND enable dark mode when the switch is toggled
+        $("#darkModeSwitch").click(function () {
+            if ($("#logoimage").attr("src") == "/assets/img/logo-cropped.svg") {
+                $('#logoimage').attr("src", "/assets/img/logo-cropped-light.svg");
+            } else {
+                $('#logoimage').attr("src", "/assets/img/logo-cropped.svg");
+            };
+            darkmode.toggle();
+        });
     </script>
 </body>
 
