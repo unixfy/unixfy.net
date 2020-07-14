@@ -31,3 +31,7 @@ canvas {
     display: block;
     vertical-align: bottom;
 }
+
+.darkmode-layer, .darkmode-toggle  {
+    z-index: 120;
+}
