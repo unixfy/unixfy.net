@@ -6,3 +6,11 @@
 .button {
     @apply rounded bg-blue-500 px-3 py-2 my-2 text-white table
 }
+
+.ct {
+    @apply max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 container
+}
+
+.link {
+    @apply text-blue-500
+}
