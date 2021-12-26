@@ -1,21 +1,15 @@
 {
     "background_color": "#ffffff",
-    "theme_color": "#E938C2",
-    "name": "Routify app",
-    "short_name": "Routify app",
+    "theme_color": "#2196F3",
+    "name": "Unixfy.net",
+    "short_name": "Unixfy.net",
     "start_url": "/",
     "display": "standalone",
     "icons": [
         {
-            "src": "/images/touch-icons/logo-192.png",
-            "sizes": "192x192",
+            "src": "/images/largeicon.png",
+            "sizes": "1000x1000",
             "type": "image/png"
-        },
-        {
-            "src": "/images/touch-icons/logo-800.png",
-            "sizes": "800x800",
-            "type": "image/png",
-            "purpose": "maskable any"
         }
     ]
 }
