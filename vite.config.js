@@ -12,6 +12,7 @@ module.exports = {
   },
   build: {
     cssCodeSplit: false,
+    polyfillDynamicImport: false
   },
   optimizeDeps: {
     exclude: ['@roxi/routify'],
@@ -26,19 +27,7 @@ module.exports = {
         autoPreprocess({
           postcss: {
             plugins: [
-              tailwind({
-                mode: 'jit',
-                darkMode: 'class',
-                future: {
-                  removeDeprecatedGapUtilities: true,
-                  purgeLayersByDefault: true,
-                },
-                plugins: [],
-                purge: {
-                  content: ['./src/**/*.svelte'],
-                  enabled: production,
-                },
-              }),
+              tailwind("./tailwind.config.cjs"),
               postcssImport,
             ],
           },
