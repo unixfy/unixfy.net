@@ -12,7 +12,8 @@ module.exports = {
   },
   build: {
     cssCodeSplit: false,
-    polyfillDynamicImport: false
+    polyfillDynamicImport: false,
+    polyfillModulePreload: false
   },
   optimizeDeps: {
     exclude: ['@roxi/routify'],

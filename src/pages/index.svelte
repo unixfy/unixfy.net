@@ -1,6 +1,6 @@
 <script>
     import {tsParticles} from "tsparticles";
-    import {onMount} from "svelte";
+    import {onMount, tick} from "svelte";
     import Typed from "typed.js";
 
     let tsparticlesoptions = {
@@ -68,48 +68,57 @@
         loop: true,
     }
 
-    onMount(async () => {
-        tsParticles
-            .load("tsparticles", tsparticlesoptions)
-            .then((container) => {
-            })
-            .catch((error) => {
-                console.error(error);
-            });
+    // Called when the h2 element that houses typed is loaded
+    const mountTyped = elem => new Typed(elem, typedjsoptions)
 
-        let typed = new Typed('.typedjs', typedjsoptions)
-    })
+    // Called when the div that houses the animation is loaded
+    // see https://svelte.dev/docs#template-syntax-element-directives-use-action
+    // idk why there's still a race condition here with svelte, but let's just use this hacky timeout for now :')
+    const mountTsparticles = function () {
+        setTimeout(() => {
+            tsParticles
+                .load("tsparticles", tsparticlesoptions)
+                .catch((error) => {
+                    console.error(error);
+                })
+        }, 50)
+    }
 </script>
 
 <!--Jumbotron-->
-<div class="h-[calc(100vh_-_4rem)] flex">
+<div class="h-[calc(100vh_-_4rem)] flex" use:mountTsparticles>
     <div class="ct m-auto text-center">
         <!--        Tsparticle wrapper -->
         <div id="tsparticles" class="h-100 absolute m-0 p-0 z-[-1]"></div>
-        <img src="/images/logo-cropped.svg" alt="Unixfy" class="md:h-32 lg:h-40 h-20 mx-auto mb-5">
-<!--        <h1 class="md:text-6xl lg:text-7xl text-4xl mb-3">Welcome to unixfy.net</h1>-->
+        <img src="/images/logo-cropped.svg" alt="Unixfy" class="md:h-32 lg:h-40 h-20 mx-auto mb-6">
+        <!--        <h1 class="md:text-6xl lg:text-7xl text-4xl mb-3">Welcome to unixfy.net</h1>-->
 
         <!--        TypedJS wrapper -->
-        <div class="sm:text-3xl md:text-4xl lg:text-5xl text-2xl font-mono">
-            <h2 class="typedjs inline"></h2>
+        <div class="sm:text-3xl md:text-4xl lg:text-5xl text-2xl font-display font-semibold">
+            <h2 class="typedjs inline" use:mountTyped></h2>
         </div>
     </div>
 </div>
 
 <div class="h-screen bg-gradient-to-tr from-[#BE93C5] to-[#7BC6CC] text-white">
     <div class="ct py-8">
-        <h1 class="sm:text-4xl md:text-5xl lg:text-6xl text-3xl">Jump to Apps</h1>
+        <h1 class="sm:text-4xl md:text-5xl lg:text-6xl text-3xl font-display">Jump to Apps</h1>
         <hr>
     </div>
 </div>
 
-<div class="h-screen bg-red-500 text-white">
-    <h1>Who am I lmao</h1>
+<div class="h-2/3 bg-red-500/50 text-white py-12">
+    <div class="ct">
+        <h1 class="sm:text-3xl md:text-4xl lg:text-5xl text-2xl font-display">Looking for services?</h1>
+        <p>Including web hosting, web development, game servers,...</p>
+    </div>
 </div>
 
 <div class="h-24 bg-gray-100 flex">
     <div class="ct my-auto">
         <p>&copy; 2020-2021 <span class="font-semibold">Unixfy</span>. All rights reserved.</p>
-        <p>Proudly built with <a href="https://svelte.dev" rel="noreferrer" class="link">Svelte</a> and <a href="https://tailwindcss.com" rel="noreferrer" class="link">TailwindCSS</a>. We run on Netlify. &#10084;</p>
+        <p>Proudly built with <a href="https://svelte.dev" rel="noreferrer" class="link">Svelte</a> and <a
+                href="https://tailwindcss.com" rel="noreferrer" class="link">TailwindCSS</a>. We run on Netlify.
+            &#10084;</p>
     </div>
 </div>
