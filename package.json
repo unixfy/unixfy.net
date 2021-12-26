@@ -66,6 +66,7 @@
     "verbose": true
   },
   "dependencies": {
-    "tsparticles": "^1.37.6"
+    "tsparticles": "^1.37.6",
+    "typed.js": "^2.0.12"
   }
 }
