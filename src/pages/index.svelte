@@ -4,6 +4,7 @@
     import Typed from "typed.js";
     import App from "../App.svelte";
     import AppJumper from "../components/AppJumper.svelte";
+    import {url} from "@roxi/routify";
 
     let tsparticlesoptions = {
         particles: {
@@ -112,17 +113,28 @@
 </div>
 
 <div class="h-screen bg-gradient-to-tr from-[#BE93C5] to-[#7BC6CC] text-white">
-    <div class="ct py-8">
+    <div class="ct section">
         <h1 class="section-heading">Jump to Apps</h1>
-        <div class="bg-white border w-100"></div>
-        <AppJumper />
+        <div class="bg-white border"></div>
+        <div class="mt-8">
+            <AppJumper/>
+        </div>
     </div>
 </div>
 
 <div class="h-2/3 bg-red-500/50 text-white py-12">
-    <div class="ct">
-        <h1 class="section-heading">Looking for services?</h1>
-        <p>Including web hosting, web development, game servers,...</p>
+    <div class="ct cta">
+        <div class="grid grid-cols-1 sm:grid-cols-3">
+            <div class="sm:col-span-2 my-auto">
+                <h1 class="cta-heading">Looking for services?</h1>
+                <p class="text-lg">Including web hosting, web development, game servers,...</p>
+            </div>
+            <div class="sm:my-auto flow-root mt-4">
+                <a class="button sm:float-right" href="{$url('/services')}">
+                    View Services
+                </a>
+            </div>
+        </div>
     </div>
 </div>
 
