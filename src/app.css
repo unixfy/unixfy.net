@@ -16,3 +16,7 @@
 .link {
     @apply text-blue-500
 }
+
+.section-heading {
+    @apply sm:text-4xl md:text-5xl lg:text-6xl text-3xl font-display mb-8
+}

@@ -2,6 +2,8 @@
     import {tsParticles} from "tsparticles";
     import {onMount, tick} from "svelte";
     import Typed from "typed.js";
+    import App from "../App.svelte";
+    import AppJumper from "../components/AppJumper.svelte";
 
     let tsparticlesoptions = {
         particles: {
@@ -69,7 +71,16 @@
     }
 
     // Called when the h2 element that houses typed is loaded
-    const mountTyped = elem => new Typed(elem, typedjsoptions)
+    const mountTyped = function (elem) {
+        let typed = new Typed(elem, typedjsoptions)
+
+        // Prevent some funny breakage with HMR
+        return {
+            destroy() {
+                typed.destroy()
+            }
+        }
+    }
 
     // Called when the div that houses the animation is loaded
     // see https://svelte.dev/docs#template-syntax-element-directives-use-action
@@ -102,14 +113,15 @@
 
 <div class="h-screen bg-gradient-to-tr from-[#BE93C5] to-[#7BC6CC] text-white">
     <div class="ct py-8">
-        <h1 class="sm:text-4xl md:text-5xl lg:text-6xl text-3xl font-display">Jump to Apps</h1>
-        <hr>
+        <h1 class="section-heading">Jump to Apps</h1>
+        <div class="bg-white border w-100"></div>
+        <AppJumper />
     </div>
 </div>
 
 <div class="h-2/3 bg-red-500/50 text-white py-12">
     <div class="ct">
-        <h1 class="sm:text-3xl md:text-4xl lg:text-5xl text-2xl font-display">Looking for services?</h1>
+        <h1 class="section-heading">Looking for services?</h1>
         <p>Including web hosting, web development, game servers,...</p>
     </div>
 </div>
