@@ -1,5 +1,19 @@
 <script>
     import Navbar from "../components/Navbar.svelte";
+    import {metatags, page} from "@roxi/routify";
+
+
+    let toTitlecase = function (str) {
+        return str.replace(
+            /\w\S*/g,
+            function (txt) {
+                return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+            }
+        );
+    }
+
+    // Autogenerate the title
+    $: metatags.title = `${toTitlecase($page.title)} | Unixfy.net`
 </script>
 
 <header/>
@@ -7,7 +21,7 @@
 <Navbar/>
 
 <main>
-        <slot/>
+    <slot/>
 </main>
 
 <footer/>
