@@ -13,7 +13,7 @@
         },
         "particles": {
             "number": {
-                "value": 400,
+                "value": 120,
                 "density": {
                     "enable": true,
                     "value_area": 800
@@ -60,7 +60,7 @@
                 "straight": false,
                 "out_mode": "out",
                 "attract": {
-                    "enable": false,
+                    "enable": true,
                     "rotateX": 600,
                     "rotateY": 1200
                 }
@@ -103,7 +103,10 @@
                 }
             }
         },
-        "retina_detect": true,
+        "detectRetina": true,
+        "fpsLimit": 30,
+        "pauseOnBlur": true,
+        "pauseOnOutsideViewport": true,
         "background": {
             "color": "#2196f3",
             "image": "",
