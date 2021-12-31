@@ -1,11 +1,14 @@
 <script>
     import Card from "./Card.svelte";
 
+
+
     let sites = [
         {
             "title": "tests",
             "content": "test3",
             "link": "#",
+            "icon": "fab fa-atlassian"
         },
         {
             "title": "tests",
@@ -42,7 +45,7 @@
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 my-4">
         {#each sites as site}
-            <Card title="{site.title}" content="{site.content}">
+            <Card title="{site.title}" content="{site.content}" icon="{site.icon}">
             </Card>
         {/each}
     </div>
