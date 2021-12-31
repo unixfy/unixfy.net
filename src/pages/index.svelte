@@ -112,11 +112,11 @@
     </div>
 </div>
 
-<div class="h-screen bg-gradient-to-tr from-[#BE93C5] to-[#7BC6CC] text-white">
+<div class="min-h-screen bg-gradient-to-tr from-[#BE93C5] to-[#7BC6CC] text-white">
     <div class="ct section">
         <h1 class="section-heading">Jump to Apps</h1>
         <div class="bg-white border"></div>
-        <div class="mt-8">
+        <div class="my-8">
             <AppJumper/>
         </div>
     </div>
