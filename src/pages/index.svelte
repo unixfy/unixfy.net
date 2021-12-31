@@ -7,59 +7,110 @@
     import {url} from "@roxi/routify";
 
     let tsparticlesoptions = {
-        particles: {
-            number: {value: 120, density: {enable: true, value_area: 800}},
-            color: {value: "#2196f3"},
-            shape: {
-                type: "circle",
-                stroke: {width: 0, color: "#000000"},
-                polygon: {nb_sides: 5},
-                image: {src: "", width: 100, height: 100},
-            },
-            opacity: {
-                value: 0.75,
-                random: false,
-                anim: {enable: false, speed: 1, opacity_min: 0.1, sync: false},
-            },
-            size: {
-                value: 4.008530152163807,
-                random: true,
-                anim: {enable: false, speed: 40, size_min: 0.1, sync: false},
-            },
-            line_linked: {
-                enable: true,
-                distance: 150,
-                color: "#2196f3",
-                opacity: 0.70,
-                width: 1,
-            },
-            move: {
-                enable: true,
-                speed: 6,
-                direction: "none",
-                random: true,
-                straight: false,
-                out_mode: "bounce",
-                bounce: false,
-                attract: {enable: true, rotateX: 600, rotateY: 1200},
-            },
+        "fullScreen": {
+            "enable": true,
+            "zIndex": -1
         },
-        interactivity: {
-            detect_on: "window",
-            events: {
-                onhover: {enable: true, mode: "repulse"},
-                onclick: {enable: true, mode: "bubble"},
-                resize: true,
+        "particles": {
+            "number": {
+                "value": 400,
+                "density": {
+                    "enable": true,
+                    "value_area": 800
+                }
             },
-            modes: {
-                grab: {distance: 400, line_linked: {opacity: 1}},
-                bubble: {distance: 400, size: 20, duration: 2, opacity: 8, speed: 3},
-                repulse: {distance: 200, duration: 0.4},
-                push: {particles_nb: 4},
-                remove: {particles_nb: 2},
+            "color": {
+                "value": "#fff"
             },
+            "shape": {
+                "type": "circle"
+            },
+            "opacity": {
+                "value": 0.5,
+                "random": true,
+                "anim": {
+                    "enable": false,
+                    "speed": 1,
+                    "opacity_min": 0.1,
+                    "sync": false
+                }
+            },
+            "size": {
+                "value": 10,
+                "random": true,
+                "anim": {
+                    "enable": false,
+                    "speed": 40,
+                    "size_min": 0.1,
+                    "sync": false
+                }
+            },
+            "line_linked": {
+                "enable": false,
+                "distance": 500,
+                "color": "#ffffff",
+                "opacity": 0.4,
+                "width": 2
+            },
+            "move": {
+                "enable": true,
+                "speed": 2,
+                "direction": "bottom",
+                "random": false,
+                "straight": false,
+                "out_mode": "out",
+                "attract": {
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 1200
+                }
+            }
         },
-        retina_detect: true,
+        "interactivity": {
+            "events": {
+                "onhover": {
+                    "enable": true,
+                    "mode": "bubble"
+                },
+                "onclick": {
+                    "enable": true,
+                    "mode": "repulse"
+                },
+                "resize": true
+            },
+            "modes": {
+                "grab": {
+                    "distance": 400,
+                    "line_linked": {
+                        "opacity": 0.5
+                    }
+                },
+                "bubble": {
+                    "distance": 400,
+                    "size": 4,
+                    "duration": 0.3,
+                    "opacity": 1,
+                    "speed": 3
+                },
+                "repulse": {
+                    "distance": 200
+                },
+                "push": {
+                    "particles_nb": 4
+                },
+                "remove": {
+                    "particles_nb": 2
+                }
+            }
+        },
+        "retina_detect": true,
+        "background": {
+            "color": "#2196f3",
+            "image": "",
+            "position": "50% 50%",
+            "repeat": "no-repeat",
+            "size": "cover"
+        }
     }
 
     let typedjsoptions = {
@@ -101,12 +152,12 @@
 <div class="h-[calc(100vh_-_4rem)] flex" use:mountTsparticles>
     <div class="ct m-auto text-center">
         <!--        Tsparticle wrapper -->
-        <div id="tsparticles" class="h-100 absolute m-0 p-0 z-[-1]"></div>
-        <img src="/images/logo-cropped.svg" alt="Unixfy" class="md:h-32 lg:h-40 h-20 mx-auto mb-6">
+        <div id="tsparticles" class="h-100 absolute m-0 p-0"></div>
+        <img src="/images/logo-cropped-light.svg" alt="Unixfy" class="md:h-32 lg:h-40 h-20 mx-auto mb-6">
         <!--        <h1 class="md:text-6xl lg:text-7xl text-4xl mb-3">Welcome to unixfy.net</h1>-->
 
         <!--        TypedJS wrapper -->
-        <div class="sm:text-3xl md:text-4xl lg:text-5xl text-2xl font-display font-semibold">
+        <div class="sm:text-3xl md:text-4xl lg:text-5xl text-2xl font-display font-semibold text-white">
             <h2 class="typedjs inline" use:mountTyped></h2>
         </div>
     </div>
