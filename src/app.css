@@ -1,5 +1,6 @@
 /*Google Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap'); /* Write your global styles here, in PostCSS syntax */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+/* Write your global styles here, in PostCSS syntax */
 /*Fontawesome*/
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
 
@@ -11,14 +12,17 @@
     @apply rounded bg-blue-500 px-3 py-2 my-2 text-white table
 }
 
+/*Basic container that restricts width*/
 .ct {
     @apply max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 container
 }
 
+/*Blue link*/
 .link {
     @apply text-blue-500
 }
 
+/*Section elements*/
 .section-heading {
     @apply sm:text-4xl md:text-5xl lg:text-6xl text-3xl font-display mb-8 font-medium
 }
@@ -27,10 +31,69 @@
     @apply py-12
 }
 
+/*Call to action elements*/
 .cta {
 
 }
 
 .cta-heading {
     @apply sm:text-3xl md:text-4xl lg:text-5xl text-2xl font-display mb-4 font-semibold
+}
+
+/*CSS gradient animation*/
+.bg-animate {
+    background-size: 400%;
+
+    -webkit-animation: GradientAnimation 10s ease infinite;
+    -moz-animation: GradientAnimation 10s ease infinite;
+    -o-animation: GradientAnimation 10s ease infinite;
+    animation: GradientAnimation 10s ease infinite;
+}
+
+@-webkit-keyframes GradientAnimation {
+    0% {
+        background-position: 93% 0%
+    }
+    50% {
+        background-position: 0% 100%
+    }
+    100% {
+        background-position: 93% 0%
+    }
+}
+
+@-moz-keyframes GradientAnimation {
+    0% {
+        background-position: 93% 0%
+    }
+    50% {
+        background-position: 0% 100%
+    }
+    100% {
+        background-position: 93% 0%
+    }
+}
+
+@-o-keyframes GradientAnimation {
+    0% {
+        background-position: 93% 0%
+    }
+    50% {
+        background-position: 0% 100%
+    }
+    100% {
+        background-position: 93% 0%
+    }
+}
+
+@keyframes GradientAnimation {
+    0% {
+        background-position: 93% 0%
+    }
+    50% {
+        background-position: 0% 100%
+    }
+    100% {
+        background-position: 93% 0%
+    }
 }

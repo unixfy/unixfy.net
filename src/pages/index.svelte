@@ -112,7 +112,7 @@
     </div>
 </div>
 
-<div class="min-h-screen bg-gradient-to-tr from-[#BE93C5] to-[#7BC6CC] text-white">
+<div class="min-h-screen bg-gradient-to-tr from-[#BE93C5] to-[#7BC6CC] text-white bg-animate">
     <div class="ct section">
         <h1 class="section-heading">Jump to Apps</h1>
         <div class="bg-white border"></div>
