@@ -68,7 +68,7 @@
     <a href="https://my.unixfy.net/client/login" rel="noreferrer">
         <div class="my-8 bg-blue-500 hover:bg-blue-300 p-8 rounded text-white transition">
             <h2 class="text-2xl md:text-3xl mb-4">Existing clients</h2>
-            <p>Click here to sign into your MyUnixfy account and manage your existing services.</p>
+            <p class="text-lg">Click here to sign into your MyUnixfy account and manage your existing services.</p>
         </div>
     </a>
 </div>
