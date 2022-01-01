@@ -166,7 +166,8 @@
     </div>
 </div>
 
-<div class="min-h-screen bg-gradient-to-tr from-[#BE93C5] to-[#7BC6CC] text-white bg-animate">
+<!--This one uses UIGradients Clear Sky in dark mode and UIGradients Dania in light mode -->
+<div class="min-h-screen bg-gradient-to-tr from-[#7BC6CC] to-[#BE93C5] dark:from-[#005C97] dark:to-[#363795] text-white bg-animate">
     <div class="ct section">
         <h1 class="section-heading">Jump to Apps</h1>
         <div class="bg-white border"></div>
@@ -176,7 +177,7 @@
     </div>
 </div>
 
-<div class="h-2/3 bg-red-500/50 text-white py-12">
+<div class="h-2/3 bg-red-500/50 dark:bg-red-800/60 text-white py-12">
     <div class="ct cta">
         <div class="grid grid-cols-1 sm:grid-cols-3">
             <div class="sm:col-span-2 my-auto">

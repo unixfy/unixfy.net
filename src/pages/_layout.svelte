@@ -21,7 +21,8 @@
 
 <Navbar/>
 
-<main>
+<!-- Pushes the footer to the bottom -->
+<main class="min-h-screen">
     <slot/>
 </main>
 

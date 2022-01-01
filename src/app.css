@@ -17,9 +17,15 @@
     @apply max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 container
 }
 
+/*Page wrapper to auto set padding & background colors for darkmode*/
+/*It is forced to be at least 100vh to make sure there's no gaps between it and the bottom*/
+.page-wrapper {
+    @apply text-black dark:text-white bg-white dark:bg-black py-8 min-h-screen transition ease-in-out
+}
+
 /*Blue link*/
 .link {
-    @apply text-blue-500
+    @apply text-blue-500 dark:text-blue-300
 }
 
 /*Section elements*/
