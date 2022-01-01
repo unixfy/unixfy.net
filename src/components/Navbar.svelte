@@ -26,11 +26,13 @@
     }
 
     onMount(async () => {
-        // Enable darkmode automatically if it's saved in localstorage
-        if ($darkmode) {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
+        if (window.routify.inBrowser) {
+            // Enable darkmode automatically if it's saved in localstorage
+            if ($darkmode) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
         }
     })
 </script>
