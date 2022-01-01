@@ -63,7 +63,7 @@
                     <li><strong>We can help! Get in touch.</strong></li>
                 </ul>
 
-                <a class="button w-100 block" href="#">Contact us</a>
+                <a class="button w-100 block" href="https://my.unixfy.net/plugin/support_manager/client_tickets/departments/" rel="noreferrer">Contact us</a>
             </div>
         </div>
 
