@@ -56,7 +56,7 @@
         {
             "title": "Support",
             "content": "Get help with Unixfy.net services",
-            "link": "https://unixfy-service.refined.site",
+            "link": "https://unixfy-support.refined.site",
             "icon": "fas fa-life-ring",
             "category": "Services"
         },
