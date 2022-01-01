@@ -25,7 +25,8 @@
                                           rel="noreferrer" class="link">here</a></strong></li>
             </ul>
 
-            <a class="button w-100 block" href="https://my.unixfy.net/order/main/packages/free-shared-hosting/" rel="noreferrer">Order now</a>
+            <a class="button w-100 block" href="https://my.unixfy.net/order/main/packages/free-shared-hosting/"
+               rel="noreferrer">Order now</a>
         </div>
 
         <div class="border border-blue-500 rounded p-8 text-center flex flex-col">
@@ -63,8 +64,11 @@
             <a class="button w-100 block" href="#">Contact us</a>
         </div>
     </div>
-    <div class="mt-8">
-        <h1 class="text-2xl md:text-3xl">You're already a client?</h1>
-        <p></p>
-    </div>
+
+    <a href="https://my.unixfy.net/client/login" rel="noreferrer">
+        <div class="my-8 bg-blue-500 hover:bg-blue-300 p-8 rounded text-white transition">
+            <h2 class="text-2xl md:text-3xl mb-4">Existing clients</h2>
+            <p>Click here to sign into your MyUnixfy account and manage your existing services.</p>
+        </div>
+    </a>
 </div>
