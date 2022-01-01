@@ -138,6 +138,13 @@
             "category": "Apps"
         },
         {
+            "title": "VoIP PBX",
+            "content": "Handle VoIP phone calls & texts",
+            "link": "https://unixfy.3cx.us:5001",
+            "icon": "fas fa-phone",
+            "category": "Apps"
+        },
+        {
             "title": "Appwrite",
             "content": "API backend for various sites & services",
             "link": "https://appwrite.unixfy.net",
