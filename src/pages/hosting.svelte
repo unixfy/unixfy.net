@@ -2,7 +2,7 @@
     import PageHeader from "../components/PageHeader.svelte";
 </script>
 
-<div class="ct">
+<div class="ct mb-8">
     <PageHeader title="UnixfyHosting" content="Providing bespoke, rock-solid, awesome hosting services."/>
 
     <!--    Priicng table-->
