@@ -181,7 +181,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-3">
             <div class="sm:col-span-2 my-auto">
                 <h1 class="cta-heading">Looking for services?</h1>
-                <p class="text-lg">Including web hosting, web development, game servers,...</p>
+                <p class="text-lg">Including web hosting, web dev, and much more.</p>
             </div>
             <div class="sm:my-auto flow-root mt-4">
                 <a class="button sm:float-right" href="{$url('/services')}">
