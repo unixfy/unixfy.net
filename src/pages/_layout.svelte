@@ -15,6 +15,7 @@
 
     // Autogenerate the title
     $: metatags.title = `${toTitlecase($page.title)} | Unixfy.net`
+    $: metatags['og:title'] = `${toTitlecase($page.title)} | Unixfy.net`
 </script>
 
 <header/>
