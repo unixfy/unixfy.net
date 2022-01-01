@@ -170,7 +170,7 @@
     <div class="ct section">
         <h1 class="section-heading">Jump to Apps</h1>
         <div class="bg-white border"></div>
-        <div class="my-8">
+        <div class="my-4 md:my-8">
             <AppJumper/>
         </div>
     </div>
