@@ -1,5 +1,7 @@
 <script>
     import {isActive, layout, url} from "@roxi/routify";
+    import {onMount} from 'svelte';
+    import {darkmode} from "../stores";
 
     export let navitems = $layout.children
 
@@ -12,15 +14,21 @@
         );
     }
 
-    // Debugging code
-    import {onMount} from 'svelte';
+    let toggleDarkMode = function () {
+        $darkmode = !($darkmode)
+    }
 
     onMount(async () => {
-        await console.log(navitems)
+        // Enable darkmode automatically if it's saved in localstorage
+        if ($darkmode) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
     })
 </script>
 
-<nav class="dark:bg-gray-800 bg-gray-50">
+<nav class="dark:bg-gray-800 bg-gray-50 sticky">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
             <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -57,7 +65,13 @@
             <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div class="flex-shrink-0 flex items-center">
                     <a href="{$url('/')}">
-                        <img class="block h-8 w-auto" src="/images/logo-cropped.svg" alt="Unixfy.net">
+                        <!--                        Lightmode logo -->
+                        {#if !$darkmode}
+                            <img class="block h-8 w-auto" src="/images/logo-cropped.svg" alt="Unixfy.net">
+                        {:else if $darkmode}
+                            <!--Darkmode logo-->
+                            <img class="block h-8 w-auto" src="/images/logo-cropped-light.svg" alt="Unixfy.net">
+                        {/if}
                     </a>
                 </div>
                 <div class="hidden sm:block sm:ml-6 float-right">
@@ -66,17 +80,26 @@
                             {#if !(meta.hidden)}
                                 {#if $isActive(path)}
                                     <a href="{$url(path)}"
-                                       class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+                                       class="bg-gray-900 dark:bg-gray-100 text-white dark:text-black px-3 py-2 rounded-md text-sm font-medium"
                                        aria-current="page">{toTitlecase(title)}</a>
                                 {:else}
                                     <a href="{$url(path)}"
-                                       class="text-gray-600 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                                       class="text-gray-600 dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                                         {toTitlecase(title)}</a>
                                 {/if}
                             {/if}
                         {/each}
                     </div>
                 </div>
+            </div>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+<!--                Darkmode toggler button -->
+                <button type="button"
+                        class="p-1 rounded-full text-gray-400 hover:bg-gray-700 focus:outline-none"
+                        on:click={toggleDarkMode}>
+                    <span class="sr-only">Toggle Dark Mode</span>
+                    <i class="fas fa-sun fa-lg"></i>
+                </button>
             </div>
         </div>
     </div>
@@ -85,7 +108,8 @@
     <div class="sm:hidden" id="mobile-menu">
         <div class="px-2 pt-2 pb-3 space-y-1">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+            <a href="#"
+               class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
                aria-current="page">Dashboard</a>
 
             <a href="#"
