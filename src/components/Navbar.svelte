@@ -2,8 +2,11 @@
     import {isActive, layout, url} from "@roxi/routify";
     import {onMount} from 'svelte';
     import {darkmode} from "../stores";
+    import {fly} from 'svelte/transition';
 
     export let navitems = $layout.children
+
+    let mobilemenu = false;
 
     let toTitlecase = function (str) {
         return str.replace(
@@ -16,6 +19,10 @@
 
     let toggleDarkMode = function () {
         $darkmode = !($darkmode)
+    }
+
+    let toggleMobileMenu = function () {
+        mobilemenu = !mobilemenu
     }
 
     onMount(async () => {
@@ -34,34 +41,31 @@
             <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 <!-- Mobile menu button-->
                 <button type="button"
-                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                        aria-controls="mobile-menu" aria-expanded="false">
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700"
+                        aria-controls="mobile-menu" aria-expanded="{mobilemenu}" on:click={toggleMobileMenu}>
                     <span class="sr-only">Open main menu</span>
-                    <!--
-                      Icon when menu is closed.
+                    {#if mobilemenu}
+                        <!--
+                          Icon when menu is open.
 
-                      Heroicon name: outline/menu
+                          Heroicon name: outline/x
 
-                      Menu open: "hidden", Menu closed: "block"
-                    -->
-                    <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                         stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                    <!--
-                      Icon when menu is open.
+                          Menu open: "block", Menu closed: "hidden"
+                        -->
+                        <i class="fas fa-times fa-lg"></i>
+                    {:else}
+                        <!--
+                          Icon when menu is closed.
 
-                      Heroicon name: outline/x
+                          Heroicon name: outline/menu
 
-                      Menu open: "block", Menu closed: "hidden"
-                    -->
-                    <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                         stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                    </svg>
+                          Menu open: "hidden", Menu closed: "block"
+                        -->
+                        <i class="fas fa-bars fa-lg"></i>
+                    {/if}
                 </button>
             </div>
+            <!--            Desktop navbar -->
             <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div class="flex-shrink-0 flex items-center">
                     <a href="{$url('/')}">
@@ -92,8 +96,9 @@
                     </div>
                 </div>
             </div>
+            <!--            Right side -->
             <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-<!--                Darkmode toggler button -->
+                <!--                Darkmode toggler button -->
                 <button type="button"
                         class="p-1 rounded-full text-gray-400 hover:bg-gray-700 focus:outline-none"
                         on:click={toggleDarkMode}>
@@ -102,24 +107,26 @@
                 </button>
             </div>
         </div>
-    </div>
 
-    <!-- Mobile menu, show/hide based on menu state. -->
-    <div class="sm:hidden" id="mobile-menu">
-        <div class="px-2 pt-2 pb-3 space-y-1">
-            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="#"
-               class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
-               aria-current="page">Dashboard</a>
-
-            <a href="#"
-               class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
-
-            <a href="#"
-               class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
-
-            <a href="#"
-               class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
-        </div>
+        <!-- Mobile menu, show/hide based on menu state. -->
+        {#if mobilemenu}
+            <div class="sm:hidden" id="mobile-menu" transition:fly="{{ x: -200, duration: 500 }}">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    {#each navitems as {path, title, children, meta, ...rest}}
+                        {#if !(meta.hidden)}
+                            {#if $isActive(path)}
+                                <a href="{$url(path)}"
+                                   class="bg-gray-900 dark:bg-gray-100 text-white dark:text-black px-3 py-2 block rounded-md text-base font-medium"
+                                   aria-current="page">{toTitlecase(title)}</a>
+                            {:else}
+                                <a href="{$url(path)}"
+                                   class="text-gray-600 dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base block font-medium">
+                                    {toTitlecase(title)}</a>
+                            {/if}
+                        {/if}
+                    {/each}
+                </div>
+            </div>
+        {/if}
     </div>
 </nav>
