@@ -1,6 +1,7 @@
 <script>
     import Navbar from "../components/Navbar.svelte";
     import {metatags, page} from "@roxi/routify";
+    import Footer from "../components/Footer.svelte";
 
 
     let toTitlecase = function (str) {
@@ -23,5 +24,7 @@
 <main>
     <slot/>
 </main>
+
+<Footer/>
 
 <footer/>
