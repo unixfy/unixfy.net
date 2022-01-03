@@ -1,0 +1,15 @@
+{
+    "background_color": "#ffffff",
+    "theme_color": "#2196F3",
+    "name": "Unixfy.net",
+    "short_name": "Unixfy.net",
+    "start_url": "/",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/images/largeicon.png",
+            "sizes": "1000x1000",
+            "type": "image/png"
+        }
+    ]
+}
