@@ -18,15 +18,15 @@
             <p>
                 <strong>Do you want to peer with me?</strong>
             </p>
-            <div class="my-4 p-8 rounded border" class:bg-red-200="{wanttopeer === false}" class:bg-green-200="{wanttopeer === true}">
+            <div class="my-4 p-8 rounded border dark:text-black" class:bg-red-200="{wanttopeer === false}" class:bg-green-200="{wanttopeer === true}">
                 {#if !(typeof wanttopeer !== 'undefined')}
                     <!-- yes button -->
-                    <button class="bg-green-500 py-3 px-6 inline hover:bg-green-400 transition rounded border text-white text-xl"
+                    <button class="bg-green-500 py-3 px-6 inline hover:bg-green-400 transition rounded text-white text-xl"
                             on:click={() => wanttopeer = true}>
                         Yes! &#128526;
                     </button>
                     <!-- no button -->
-                    <button class="bg-red-500 py-3 px-6 inline hover:bg-red-400 transition rounded border text-white text-xl"
+                    <button class="bg-red-500 py-3 px-6 inline hover:bg-red-400 transition rounded text-white text-xl"
                             on:click={() => wanttopeer = false}>
                         No! &#9785;
                     </button>
@@ -41,7 +41,7 @@
                         Prepare to be redirected...
                     {/if}
                     <div class="mt-4">
-                        <button class="bg-cyan-500 py-2 px-4 inline hover:bg-cyan-400 transition rounded border text-white text-xl"
+                        <button class="bg-cyan-500 py-2 px-4 inline hover:bg-cyan-400 transition rounded text-white text-xl"
                                 on:click={() => wanttopeer = undefined}>
                             Let's choose again... &#129320;
                         </button>
