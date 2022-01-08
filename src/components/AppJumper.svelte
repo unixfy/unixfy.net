@@ -32,13 +32,6 @@
             "icon": "fas fa-info-circle",
             "category": "Sites"
         },
-        {
-            "title": "AS139921",
-            "content": "Learn about Unixfy Network (AS139921), let's get peered",
-            "link": "https://network.unixfy.net",
-            "icon": "fas fa-network-wired",
-            "category": "Sites"
-        },
         // {
         //     "title": "Software",
         //     "content": "test3",
