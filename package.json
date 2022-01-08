@@ -67,6 +67,7 @@
     "verbose": true
   },
   "dependencies": {
+    "@directus/sdk": "^9.4.3",
     "tsparticles": "^1.37.6",
     "typed.js": "^2.0.12"
   }
