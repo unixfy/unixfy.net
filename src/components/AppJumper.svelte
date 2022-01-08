@@ -110,6 +110,13 @@
             "category": "Apps"
         },
         {
+            "title": "Jira (Onprem)",
+            "content": "Project management software for internal projects",
+            "link": "https://jira.unixfy.net",
+            "icon": "fab fa-jira",
+            "category": "Apps"
+        },
+        {
             "title": "Seafile",
             "content": "Securely store files for desktop use",
             "link": "https://files.unixfy.net",
@@ -152,9 +159,16 @@
             "category": "Apps"
         },
         {
+            "title": "Directus",
+            "content": "API backend for content-backed sites & services",
+            "link": "https://apis.unixfy.net",
+            "icon": "fas fa-sitemap",
+            "category": "Apps"
+        },
+        {
             "title": "Media",
             "content": "Watch some TV",
-            "link": "https://app.plex.tv",
+            "link": "https://unixfy.stream",
             "icon": "fas fa-film",
             "category": "Apps"
         },
