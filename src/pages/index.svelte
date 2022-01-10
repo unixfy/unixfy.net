@@ -26,25 +26,25 @@
         }
     }
 
-    // Called when the div that houses the animation is loaded
-    // see https://svelte.dev/docs#template-syntax-element-directives-use-action
-    // idk why there's still a race condition here with svelte, but let's just use this hacky timeout for now :')
-    const mountTsparticles = function () {
-        setTimeout(() => {
-            tsParticles
-                .load("tsparticles", $tsparticlesoptions)
-                .catch((error) => {
-                    console.error(error);
-                })
-        }, 50)
+    // The div that holds the TSParticles stuff won't show until this function returns
+    async function mountTsParticles() {
+        tsParticles
+            .load("tsparticles", $tsparticlesoptions)
+            .catch((error) => {
+                console.error(error);
+            })
     }
+
+    const mountTsparticles = mountTsParticles();
 </script>
 
 <!--Jumbotron-->
-<div class="h-[calc(100vh_-_4rem)] flex" use:mountTsparticles>
+<div class="h-[calc(100vh_-_4rem)] flex">
     <div class="ct m-auto text-center">
-        <!--        Tsparticle wrapper -->
-        <div id="tsparticles" class="h-100 absolute m-0 p-0"></div>
+        {#await mountTsparticles}
+            <!--        Tsparticle wrapper -->
+            <div id="tsparticles" class="h-100 absolute m-0 p-0"></div>
+        {/await}
         <img src="/images/logo-cropped-light.svg" alt="Unixfy" class="md:h-32 lg:h-40 h-20 mx-auto mb-6">
         <!--        <h1 class="md:text-6xl lg:text-7xl text-4xl mb-3">Welcome to unixfy.net</h1>-->
 
