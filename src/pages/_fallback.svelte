@@ -1,20 +1,36 @@
 <script>
-    import {url} from "@roxi/routify";
+    // The div that holds the TSParticles stuff won't show until this function returns
+    import {tsParticles} from "tsparticles";
+    import {tsparticles404options} from "../stores";
+
+    async function mountTsParticles() {
+        tsParticles
+            .load("tsparticles", $tsparticles404options)
+            .catch((error) => {
+                console.error(error);
+            })
+    }
+
+    const mountTsparticles = mountTsParticles();
 </script>
 
-<div class="page-wrapper">
-    <div class="ct">
-        <div class="my-4 bg-red-500 p-5 rounded text-white">
-            <div>
-                <h1 class="text-2xl">Houston, we have a problem...</h1>
-                <p>The page you were looking for couldn't be found. (Error 404)</p>
-            </div>
+<div class="page-wrapper bg-gradient-to-tr from-[#005C97] to-[#363795] text-white bg-animate">
+    <div class="ct text-center">
+        {#await mountTsparticles}
+            <!--        Tsparticle wrapper -->
+            <div id="tsparticles" class="h-100 absolute m-0 p-0"></div>
+        {/await}
+        <div class="mb-16">
+            <h1 class="sm:text-3xl md:text-4xl lg:text-5xl text-2xl font-display font-semibold">Oops! Error 404</h1>
+            <h2 class="mt-2">Houston, we've got a problem! We're lost in space!</h2>
         </div>
-
         <div>
-            <h2 class="text-xl">Here's what you can do:</h2>
-            <a class="button" href="{$url('/')}">Go Home</a>
+            <img alt="Unixfy's funny 404 illustration" src="/images/404-illustration.svg" width="50%" height="500px"
+                 class="mx-auto animate-pulse"/>
+            <!--        This is hidden on screens smaller than md -->
+            <p class="text-xs hidden italic md:inline">yep, I'm a great artist :)</p>
         </div>
-
     </div>
 </div>
+
+<!-- routify:options title="404" -->
