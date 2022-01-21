@@ -2,16 +2,22 @@
     // The div that holds the TSParticles stuff won't show until this function returns
     import {tsParticles} from "tsparticles";
     import {tsparticles404options} from "../stores";
+    import {onDestroy} from "svelte";
+
+    let tsparticlesinstance;
 
     async function mountTsParticles() {
-        tsParticles
-            .load("tsparticles", $tsparticles404options)
+        tsparticlesinstance = tsParticles
+            .load("tsparticles404", $tsparticles404options)
             .catch((error) => {
                 console.error(error);
             })
     }
 
     const mountTsparticles = mountTsParticles();
+
+    // We have to get rid of tsparticles once the user navigates away from the page
+    onDestroy(() => tsParticles.dom().find((c) => c.id === 'tsparticles404').destroy())
 </script>
 
 <div class="page-wrapper bg-gradient-to-tr from-[#005C97] to-[#363795] text-white bg-animate">
