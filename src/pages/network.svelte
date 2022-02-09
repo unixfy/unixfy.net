@@ -18,7 +18,8 @@
             <p>
                 <strong>Do you want to peer with me?</strong>
             </p>
-            <div class="my-4 p-8 rounded border dark:text-black" class:bg-red-200="{wanttopeer === false}" class:bg-green-200="{wanttopeer === true}">
+            <div class="my-4 p-8 rounded border dark:text-black" class:bg-red-200="{wanttopeer === false}"
+                 class:bg-green-200="{wanttopeer === true}">
                 {#if !(typeof wanttopeer !== 'undefined')}
                     <!-- yes button -->
                     <button class="bg-green-500 py-3 px-6 inline hover:bg-green-400 transition rounded text-white text-xl"
@@ -54,13 +55,17 @@
         <div class="mb-8">
             <h2 class="text-2xl md:text-3xl lg:text-4xl font-display mb-4">Contacts</h2>
             <p>
-                <strong>Abuse queries:</strong> Send an email to <a href="mailto:abuse@unixfy.net" class="link">abuse
-                [at] unixfy.net</a>
-                <br>
-                <strong>General queries:</strong> Send an email to <a href="mailto:alex@unixfy.net" class="link">alex
-                [at] unixfy.net</a>
-                <span class="text-red-500 my-4 block">Do not send spam or marketing!  Your email will be marked as spam.</span>
-                I typically respond to queries within 24 hours.
+                <strong>Abuse/Support queries:</strong> Send an email to <a href="mailto:support@unixfy.net" class="link">support [at] unixfy.net</a>
+                (Note: this email will automatically open a support ticket for you.)
+            </p>
+            <p>
+                <strong>General queries:</strong> Send an email to <a href="mailto:alex@unixfy.net" class="link">alex [at] unixfy.net</a>
+            </p>
+            <p class="text-red-500 my-4 block">
+                Please do not send spam or marketing!
+            </p>
+            <p>
+                I typically respond to non-spam queries within 24 hours.
             </p>
         </div>
 
