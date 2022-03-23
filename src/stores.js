@@ -1,5 +1,4 @@
 import {readable, writable} from "svelte/store";
-import {Directus} from "@directus/sdk";
 
 // Whether darkmode is enabled or not
 // Enable by default if darkmode is set to true in localstorage or the system scheme is set to dark
@@ -718,4 +717,3 @@ export const tsparticles404options = readable({
     }
 })
 
-export const directus = readable(new Directus('https://apis.unixfy.net'))
