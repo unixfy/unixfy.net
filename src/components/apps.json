@@ -26,13 +26,6 @@
             "category": "Apps"
         },
         {
-            "title": "Media",
-            "desc": "Watch some TV",
-            "url": "https://unixfy.stream",
-            "icon": "fas fa-file",
-            "category": "Apps"
-        },
-        {
             "title": "Webmail (Workspace)",
             "desc": "Google Workspace account webmail",
             "url": "https://mail.google.com/a/unixfy.net",
@@ -93,13 +86,6 @@
             "desc": "Securely access apps & services",
             "url": "https://sso.unixfy.net",
             "icon": "fas fa-sign-in-alt",
-            "category": "Services"
-        },
-        {
-            "title": "MyUnixfy",
-            "desc": "Access your hosting account",
-            "url": "https://my.unixfy.net",
-            "icon": "fas fa-file-invoice",
             "category": "Services"
         },
         {
