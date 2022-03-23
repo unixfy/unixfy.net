@@ -1,7 +1,7 @@
 <script>
     import Card from "./Card.svelte";
-    import {directus} from "../stores";
     import {ready} from "@roxi/routify";
+    import * as appjumperData from './apps.json'
 
     // We fill this in later
     let categories = [];
@@ -14,16 +14,10 @@
 
     async function loadData() {
         // Grab all appjumper categories
-        let categoriesData = await $directus.items('UNIXFYNET_AppJumperCategories').readMany();
-        categories = categoriesData["data"]
+        categories = appjumperData.categories
 
         // Grab all appjumper items that are published
-        const sitesData = await $directus.items('UNIXFYNET_AppJumper').readMany({
-            "filter": {
-                status: "published"
-            }
-        });
-        sites = sitesData["data"]
+        sites = appjumperData.sites
 
         // We call $ready(); here so that Spank doesn't start generating static pages until our API requests complete
         // That way the static pages will still be populated with data!
@@ -46,7 +40,7 @@
                 <h1 class="sm:text-2xl md:text-3xl lg:text-4xl text-xl">{category.name.charAt(0).toUpperCase() + category.name.slice(1)}</h1>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 my-4">
-                    {#each filtersitesbycategory(category.id) as site}
+                    {#each filtersitesbycategory(category.name) as site}
                         <Card title="{site.title}" content="{site.desc}" icon="{site.icon}" link="{site.url}">
                         </Card>
                     {/each}
