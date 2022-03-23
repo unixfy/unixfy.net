@@ -1,0 +1,176 @@
+{
+    "categories": [
+        {
+            "name": "Sites"
+        },
+        {
+            "name": "Services"
+        },
+        {
+            "name": "Apps"
+        }
+    ],
+    "sites": [
+        {
+            "title": "3CX PBX",
+            "desc": "Handle VoIP phone calls & texts",
+            "url": "https://unixfy.3cx.us:5001",
+            "icon": "fas fa-phone",
+            "category": "Apps"
+        },
+        {
+            "title": "Appwrite",
+            "desc": "API backend for external sites & services",
+            "url": "https://appwrite.unixfy.net",
+            "icon": "fas fa-mobile",
+            "category": "Apps"
+        },
+        {
+            "title": "Media",
+            "desc": "Watch some TV",
+            "url": "https://unixfy.stream",
+            "icon": "fas fa-file",
+            "category": "Apps"
+        },
+        {
+            "title": "Webmail (Workspace)",
+            "desc": "Google Workspace account webmail",
+            "url": "https://mail.google.com/a/unixfy.net",
+            "icon": "fab fa-google",
+            "category": "Apps"
+        },
+        {
+            "title": "Webmail (Onprem)",
+            "desc": "Self-hosted email account webmail",
+            "url": "https://webmail.disulfi.de",
+            "icon": "fas fa-envelope",
+            "category": "Apps"
+        },
+        {
+            "title": "Blog",
+            "desc": "Captivating ramblings about tech, hosting, and life",
+            "url": "https://blog.unixfy.net",
+            "icon": "fas fa-rss",
+            "category": "Sites"
+        },
+        {
+            "title": "Docs",
+            "desc": "Documentation for services & tutorials",
+            "url": "https://docs.unixfy.net",
+            "icon": "fas fa-book",
+            "category": "Sites"
+        },
+        {
+            "title": "Alex-Wang.net",
+            "desc": "Is Unixfy a person? Perhaps 😉",
+            "url": "https://alex-wang.net",
+            "icon": "fas fa-smile",
+            "category": "Sites"
+        },
+        {
+            "title": "GambitProfit",
+            "desc": "A data portal for past Gambit plays",
+            "url": "https://gambitprofit.com",
+            "icon": "fas fa-info-circle",
+            "category": "Sites"
+        },
+        {
+            "title": "YieldBread",
+            "desc": "A student blog about making money online",
+            "url": "https://yieldbread.com",
+            "icon": "fas fa-money-bill-wave",
+            "category": "Sites"
+        },
+        {
+            "title": "Support",
+            "desc": "Get help with Unixfy.net services",
+            "url": "https://unixfy-support.refined.site",
+            "icon": "fas fa-life-ring",
+            "category": "Services"
+        },
+        {
+            "title": "Single Sign-On",
+            "desc": "Securely access apps & services",
+            "url": "https://sso.unixfy.net",
+            "icon": "fas fa-sign-in-alt",
+            "category": "Services"
+        },
+        {
+            "title": "MyUnixfy",
+            "desc": "Access your hosting account",
+            "url": "https://my.unixfy.net",
+            "icon": "fas fa-file-invoice",
+            "category": "Services"
+        },
+        {
+            "title": "Status",
+            "desc": "See if things are on fire",
+            "url": "https://status.unixfy.net",
+            "icon": "fas fa-check-circle",
+            "category": "Services"
+        },
+        {
+            "title": "Uptime Monitor",
+            "desc": "Be sure nothing's on fire",
+            "url": "https://hetrixtools.com/r/66e69eb4eb7261f2aa293972f4e89641/",
+            "icon": "fas fa-chart-line",
+            "category": "Services"
+        },
+        {
+            "title": "Confluence (Cloud)",
+            "desc": "Internal wiki",
+            "url": "https://unixfy.atlassian.net/wiki",
+            "icon": "fab fa-confluence",
+            "category": "Apps"
+        },
+        {
+            "title": "Confluence (Onprem)",
+            "desc": "Internal wiki & Unixfy Docs",
+            "url": "https://confluence.unixfy.net/login.action",
+            "icon": "fab fa-confluence",
+            "category": "Apps"
+        },
+        {
+            "title": "Jira (Cloud)",
+            "desc": "Project management software",
+            "url": "https://unixfy.atlassian.net/jira",
+            "icon": "fab fa-jira",
+            "category": "Apps"
+        },
+        {
+            "title": "Seafile",
+            "desc": "Securely store files for desktop use",
+            "url": "https://files.unixfy.net",
+            "icon": "fas fa-file",
+            "category": "Apps"
+        },
+        {
+            "title": "Link Shortener",
+            "desc": "go.unixfy.net/yourlinkhere",
+            "url": "https://app.shlink.io",
+            "icon": "fas fa-link",
+            "category": "Apps"
+        },
+        {
+            "title": "S3",
+            "desc": "Securely store files with a robust API",
+            "url": "https://s3-console.unixfy.net",
+            "icon": "fas fa-fill",
+            "category": "Apps"
+        },
+        {
+            "title": "Internal VPN",
+            "desc": "Access privileged services on Unixfy-managed servers",
+            "url": "https://zerotier.unixfy.net",
+            "icon": "fas fa-ethernet",
+            "category": "Apps"
+        },
+        {
+            "title": "My.Disulfi.De",
+            "desc": "Access your hosting account",
+            "url": "https://my.disulfi.de",
+            "icon": "fas fa-file-invoice",
+            "category": "Services"
+        }
+    ]
+}
