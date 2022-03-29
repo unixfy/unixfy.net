@@ -100,7 +100,7 @@
                 <div class="mt-4 sm:my-auto text-center sm:border-l col-span-2">
                     <h3 class="text-xl md:text-2xl lg:text-3xl font-display">Get in touch now!</h3>
                     <a class="button block sm:mx-8 mt-4"
-                       href="https://my.unixfy.net/plugin/support_manager/client_tickets/departments/" rel="noreferrer">Contact
+                       href="https://my.disulfi.de/index.php?fuse=support&controller=ticket&view=submitticket" rel="noreferrer">Contact
                         us</a>
                 </div>
             </div>

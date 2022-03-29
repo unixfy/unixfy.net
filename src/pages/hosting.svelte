@@ -27,7 +27,7 @@
                                               rel="noreferrer" class="link">here</a></strong></li>
                 </ul>
 
-                <a class="button w-100 block" href="https://my.unixfy.net/order/main/packages/free-shared-hosting/"
+                <a class="button w-100 block" href="https://my.disulfi.de"
                    rel="noreferrer">Order now</a>
             </div>
 
@@ -43,7 +43,7 @@
                     <li>Something new...</li>
                 </ul>
 
-                <a class="button w-100 block" href="https://my.unixfy.net" rel="noreferrer">Order now</a>
+                <a class="button w-100 block" href="https://my.disulfi.de" rel="noreferrer">Order now</a>
             </div>
 
             <div class="border border-blue-500 rounded p-8 text-center flex flex-col">
@@ -63,14 +63,14 @@
                     <li><strong>We can help! Get in touch.</strong></li>
                 </ul>
 
-                <a class="button w-100 block" href="https://my.unixfy.net/plugin/support_manager/client_tickets/departments/" rel="noreferrer">Contact us</a>
+                <a class="button w-100 block" href="https://my.disulfi.de/index.php?fuse=support&controller=ticket&view=submitticket" rel="noreferrer">Contact us</a>
             </div>
         </div>
 
-        <a href="https://my.unixfy.net/client/login" rel="noreferrer">
+        <a href="https://my.disulfi.de/index.php?fuse=home&view=login" rel="noreferrer">
             <div class="mt-8 bg-blue-500 hover:bg-blue-300 p-8 rounded text-white transition">
                 <h2 class="text-2xl md:text-3xl mb-4">Existing clients</h2>
-                <p class="text-lg">Click here to sign into your MyUnixfy account and manage your existing services.</p>
+                <p class="text-lg">Click here to sign into your account and manage your existing services.</p>
             </div>
         </a>
     </div>
