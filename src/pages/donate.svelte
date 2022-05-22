@@ -34,14 +34,9 @@
                 <p>USDC/ETH/DAI on Ethereum mainnet only.</p>
             </div>
             <!--            CB Commerce donation button -->
-            <div>
-                <a class="donate-with-crypto"
-                   href="https://commerce.coinbase.com/checkout/73fa228a-30c6-439b-bdde-aa2da9150492">
-                    Donate with Crypto
-                </a>
-                <script src="https://commerce.coinbase.com/v1/checkout.js?version=201807">
-                </script>
-            </div>
+            <a href="https://commerce.coinbase.com/checkout/73fa228a-30c6-439b-bdde-aa2da9150492" rel="noreferrer" target="_blank">
+                <div class="button">Donate with Coinbase Commerce</div>
+            </a>
 
         </div>
 
