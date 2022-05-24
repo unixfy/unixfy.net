@@ -16,6 +16,10 @@
   to = "/index.html"
   status = 200
 
+[[headers]]
+  for = "/manifest.webmanifest"
+  [headers.values]
+    Content-Type = "application/manifest+json"
 
 [[headers]]
   # Define which paths this specific [[headers]] block will cover.
