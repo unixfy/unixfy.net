@@ -22,8 +22,6 @@
     "dev:vite": "vite",
     "build:vite": "vite build",
     "serve:vite": "vite preview",
-    "build:pwa-bundle": "esbuild --bundle src/sw.js --outfile=public/sw.generated.js --define:process.env.NODE_ENV=\"'production'\"",
-    "build:pwa-inject": "workbox injectManifest",
     "build:static": "spank"
   },
   "devDependencies": {
@@ -45,8 +43,7 @@
     "svelte-preprocess": "^4.10.1",
     "tailwindcss": "^3.0.7",
     "vite": "^2.3.7",
-    "vite-main-js": "^0.0.1",
-    "workbox-cli": "^6.1.0"
+    "vite-main-js": "^0.0.1"
   },
   "routify": {
     "extensions": "svelte,html,svx,md"
