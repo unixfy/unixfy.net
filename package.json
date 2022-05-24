@@ -67,6 +67,6 @@
     "verbose": true
   },
   "dependencies": {
-    "tsparticles": "^1.37.6",
+    "tsparticles": "^1.37.6"
   }
 }
