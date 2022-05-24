@@ -103,3 +103,10 @@
         background-position: 93% 0%
     }
 }
+
+.jumbo-bg {
+    /* from here https://www.magicpattern.design/tools/css-backgrounds */
+    background-color: #7BC6CC;
+    opacity: 0.9;
+    background-image: repeating-radial-gradient(circle at 0% 50%, transparent 0, #7BC6CC 15px), repeating-linear-gradient(#BE93C555, #BE93C5);
+}
