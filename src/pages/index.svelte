@@ -46,7 +46,7 @@
     </div>
 </div>
 
-<div class="h-2/3 bg-red-500 dark:bg-red-800 text-white py-12">
+<div class="h-2/3 bg-[#7E1F86] text-white py-12">
     <div class="ct cta">
         <div class="grid grid-cols-1 sm:grid-cols-3">
             <div class="sm:col-span-2 my-auto">
