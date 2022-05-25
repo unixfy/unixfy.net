@@ -1,5 +1,6 @@
 <script>
     import {useRegisterSW} from 'virtual:pwa-register/svelte';
+    import { slide } from 'svelte/transition';
 
     const {offlineReady, needRefresh, updateServiceWorker} = useRegisterSW({
         onRegistered(swr) {
@@ -23,7 +24,7 @@
 </script>
 
 {#if toast}
-    <div class="fixed right-0 bottom-0 m-4 p-6 rounded shadow z-[100] bg-white border-blue-500 border max-w-sm"
+    <div class="fixed right-0 bottom-0 m-4 p-6 rounded shadow z-[100] bg-white border-blue-500 border max-w-sm" in:slide out:slide
          role="alert">
         <div class="mb-4">
             <span>&#127881;</span>
