@@ -1,77 +1,49 @@
 <script>
-  import {useRegisterSW} from 'virtual:pwa-register/svelte';
+    import {useRegisterSW} from 'virtual:pwa-register/svelte';
 
-  const {offlineReady, needRefresh, updateServiceWorker} = useRegisterSW({
-    onRegistered(swr) {
-      console.log(`SW registered: ${swr}`);
-    },
-    onRegisterError(error) {
-      console.log('SW registration error', error);
-    },
-    onOfflineReady() {
-      console.log('SW ready for offline')
+    const {offlineReady, needRefresh, updateServiceWorker} = useRegisterSW({
+        onRegistered(swr) {
+            console.log(`SW registered: ${swr}`);
+        },
+        onRegisterError(error) {
+            console.log('SW registration error', error);
+        },
+        onOfflineReady() {
+            console.log('SW ready for offline')
+            setTimeout(() => close(), 5000)
+        }
+    });
+
+    function close() {
+        offlineReady.set(false)
+        needRefresh.set(false)
     }
-  });
 
-  function close() {
-    offlineReady.set(false)
-    needRefresh.set(false)
-  }
-
-  $: toast = $offlineReady || $needRefresh;
+    $: toast = $offlineReady || $needRefresh;
 </script>
 
 {#if toast}
-  <div
-          className="pwa-toast"
-          role="alert"
-  >
-    <div className="message">
-      {#if $offlineReady}
+    <div class="fixed right-0 bottom-0 m-4 p-6 rounded shadow z-[100] bg-white border-blue-500 border max-w-sm"
+         role="alert">
+        <div class="mb-4">
+            <span>&#127881;</span>
+            {#if $offlineReady}
       <span>
-        App ready to work offline
+        This site is ready to use offline.
       </span>
-      {:else}
+            {:else}
       <span>
-        New content available, click on reload button to update.
+        A new version of this site is available! Click the reload button to update.
       </span>
-      {/if}
+            {/if}
+        </div>
+        {#if $needRefresh}
+            <button class="button m-0" on:click={() => updateServiceWorker(true)}>
+                Reload
+            </button>
+        {/if}
+        <button class="button m-0" on:click={close}>
+            Close
+        </button>
     </div>
-    {#if $needRefresh}
-      <button on:click={() => updateServiceWorker(true)}>
-        Reload
-      </button>
-    {/if}
-    <button on:click={close}>
-      Close
-    </button>
-  </div>
 {/if}
-
-<style>
-  .pwa-toast {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    margin: 16px;
-    padding: 12px;
-    border: 1px solid #8885;
-    border-radius: 4px;
-    z-index: 1;
-    text-align: left;
-    box-shadow: 3px 4px 5px 0 #8885;
-    background-color: white;
-  }
-
-  .pwa-toast .message {
-    margin-bottom: 8px;
-  }
-
-  .pwa-toast button {
-    border: 1px solid #8885;
-    outline: none;
-    margin-right: 5px;
-    border-radius: 2px;
-    padding: 3px 10px;
-  }
-</style>
