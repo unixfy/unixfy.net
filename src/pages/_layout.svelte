@@ -23,7 +23,7 @@
 <Navbar/>
 
 <!-- Pushes the footer to the bottom -->
-<main class="min-h-screen">
+<main class="min-h-screen pt-[3rem]">
     <slot/>
 </main>
 

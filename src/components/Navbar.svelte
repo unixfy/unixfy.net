@@ -38,7 +38,7 @@
 </script>
 
 <!--Note that the absolute here and the sticky on the child keeps the navbar stuck to the top while not pushing other elements down when it's opened-->
-<nav class="dark:bg-gray-800 bg-gray-50 absolute transition ease-in-out z-[100] mb-0 w-full">
+<nav class="dark:bg-gray-800 bg-gray-50 absolute transition ease-in-out z-[100] w-full">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 sticky">
         <div class="relative flex items-center justify-between h-16">
             <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">

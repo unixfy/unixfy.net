@@ -5,10 +5,10 @@
 
 <!--Jumbotron-->
 <!--Palette is here https://coolors.co/7bc6cc-be93c5-7e1f86-->
-<div class="min-h-[calc(100vh_-_4rem)] dark:text-white flex bg-white dark:bg-slate-900">
+<div class="min-h-[100vh] dark:text-white flex bg-white dark:bg-slate-900">
     <div class="ct m-auto z-0">
         <!--        This is the background pattern thing for the right side (top on mobile) -->
-        <div class="jumbo-bg h-1/4 sm:h-[28%] md:h-[calc(100vh_-_4rem)] absolute top-[4rem] md:bottom-0 right-0 w-full md:w-[40%] -z-[1]"></div>
+        <div class="jumbo-bg h-1/3 sm:h-[28%] md:h-[100vh] absolute top-[3rem] md:bottom-0 right-0 w-full md:w-[40%] -z-[1]"></div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="text-center md:text-left">
                 <h1 class="text-5xl sm:text-6xl md:text-[3.5rem] lg:text-7xl mb-3 font-display font-semibold">
