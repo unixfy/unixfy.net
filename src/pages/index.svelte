@@ -12,12 +12,20 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="text-center md:text-left">
                 <h1 class="text-5xl sm:text-6xl md:text-[3.5rem] lg:text-7xl mb-3 font-display font-semibold">
-                    Bespoke web
-                    <span class="bg-gradient-to-tr from-[#7BC6CC] to-[#BE93C5] bg-clip-text text-transparent block font-bold">
-                        hosting & development
-                        <span class="text-4xl lg:text-5xl mb-1 block">+more</span>
+                    <span class="block pb-4">
+                        Digital infrastructure
+                            <span class="bg-gradient-to-tr from-[#7BC6CC] to-[#BE93C5] bg-clip-text text-transparent font-bold">
+                            exploration.
+                            </span>
                     </span>
-                    solutions.
+                    <span class="block">
+                        Web-based
+                        <span class="bg-gradient-to-tr from-[#7BC6CC] to-[#BE93C5] bg-clip-text text-transparent font-bold">
+                            solutions.
+                            <br>
+                        <span class="text-4xl lg:text-5xl mb-1">+more</span>
+                        </span>
+                    </span>
                 </h1>
                 <!--                Scroll down button -->
                 <a href="#jumper" aria-label="Scroll down"> <i
