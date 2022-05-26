@@ -6,9 +6,9 @@
 <!--Jumbotron-->
 <!--Palette is here https://coolors.co/7bc6cc-be93c5-7e1f86-->
 <div class="min-h-[100vh] dark:text-white flex bg-white dark:bg-slate-900">
-    <div class="ct m-auto z-0">
+    <div class="ct m-auto z-0 p-4">
         <!--        This is the background pattern thing for the right side (top on mobile) -->
-        <div class="jumbo-bg h-1/3 sm:h-[28%] md:h-[100vh] absolute top-[3rem] md:bottom-0 right-0 w-full md:w-[40%] -z-[1]"></div>
+        <div class="jumbo-bg h-1/3 sm:h-[28vh] md:h-[100vh] absolute top-[3rem] md:bottom-0 right-0 w-full md:w-[40%] -z-[1]"></div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="text-center md:text-left">
                 <h1 class="text-5xl sm:text-6xl md:text-[3.5rem] lg:text-7xl mb-3 font-display font-semibold">
@@ -34,7 +34,7 @@
             </div>
             <!--            Right side / top side logo container -->
             <div class="flex mb-8 md:mb-0 order-first md:order-last">
-                <div class="m-auto bg-[#7E1F86] p-10 rounded-2xl drop-shadow-xl hover:drop-shadow-2xl transition-all hover:scale-105  w-3/4 md:w-full dark:shadow-gray-700 shadow-gray-900">
+                <div class="md:my-auto mx-auto mt-[20vh] bg-[#7E1F86] p-10 rounded-2xl drop-shadow-xl hover:drop-shadow-2xl transition-all hover:scale-105  w-3/4 md:w-full dark:shadow-gray-700 shadow-gray-900">
                     <img src="/images/logo-cropped-light.svg" alt="Unixfy">
                 </div>
             </div>
