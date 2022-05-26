@@ -8,10 +8,10 @@
 <div class="min-h-[100vh] dark:text-white flex bg-white dark:bg-slate-900">
     <div class="ct m-auto z-0 p-4">
         <!--        This is the background pattern thing for the right side (top on mobile) -->
-        <div class="jumbo-bg h-1/3 sm:h-[28vh] md:h-[100vh] absolute top-[3rem] md:bottom-0 right-0 w-full md:w-[40%] -z-[1]"></div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="jumbo-bg h-[30vh] sm:h-[28vh] md:h-[100vh] absolute top-[3rem] md:bottom-0 right-0 w-full md:w-[40%] -z-[1]"></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 flex">
             <div class="text-center md:text-left">
-                <h1 class="text-5xl sm:text-6xl md:text-[3.5rem] lg:text-7xl mb-3 font-display font-semibold">
+                <h1 class="text-5xl sm:text-6xl md:text-[3.5rem] lg:text-7xl font-display font-semibold">
                     <span class="block pb-4">
                         Digital infrastructure
                             <span class="bg-gradient-to-tr from-[#7BC6CC] to-[#BE93C5] bg-clip-text text-transparent font-bold">
@@ -33,8 +33,8 @@
                 </a>
             </div>
             <!--            Right side / top side logo container -->
-            <div class="flex mb-8 md:mb-0 order-first md:order-last">
-                <div class="md:my-auto mx-auto mt-[20vh] bg-[#7E1F86] p-10 rounded-2xl drop-shadow-xl hover:drop-shadow-2xl transition-all hover:scale-105  w-3/4 md:w-full dark:shadow-gray-700 shadow-gray-900">
+            <div class="flex md:mb-0 order-first md:order-last">
+                <div class="md:my-auto mx-auto mt-[4vh] bg-[#7E1F86] p-10 rounded-2xl drop-shadow-xl hover:drop-shadow-2xl transition-all hover:scale-105  w-3/4 md:w-full dark:shadow-gray-700 shadow-gray-900">
                     <img src="/images/logo-cropped-light.svg" alt="Unixfy">
                 </div>
             </div>
