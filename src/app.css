@@ -36,7 +36,7 @@
 }
 
 .section {
-    @apply py-12
+    @apply py-10 md:py-12
 }
 
 /*Call to action elements*/

@@ -102,8 +102,8 @@
 <!--    </div>-->
 <!--</a>-->
 
-<div class="bg-white text-black dark:bg-slate-900 dark:text-white">
-    <div class="ct py-12 sm:py-16">
+<div class="bg-white text-black dark:bg-slate-900 dark:text-white section">
+    <div class="ct">
         <h2 class="section-heading">
             Hosting
         </h2>
@@ -111,7 +111,7 @@
     </div>
 </div>
 
-<div class="bg-[#7E1F86] text-white">
+<div class="bg-[#7E1F86] text-white section">
     <div class="ct py-12 sm:py-16">
         <h2 class="section-heading">
             Development
@@ -121,9 +121,9 @@
 
 
 <!--This one uses UIGradients Clear Sky in dark mode and UIGradients Dania in light mode -->
-<div class="min-h-screen bg-gradient-to-tr from-[#7BC6CC] to-[#BE93C5] dark:from-[#005C97] dark:to-[#363795] text-white bg-animate"
+<div class="bg-gradient-to-tr from-[#7BC6CC] to-[#BE93C5] dark:from-[#005C97] dark:to-[#363795] text-white bg-animate section"
      id="jumper">
-    <div class="ct section">
+    <div class="ct">
         <h1 class="section-heading">Hosted Apps & Sites</h1>
         <div class="bg-white border"></div>
         <div class="my-4 md:my-8">
