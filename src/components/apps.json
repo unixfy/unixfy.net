@@ -40,27 +40,6 @@
             "category": "Apps"
         },
         {
-            "title": "Blog",
-            "desc": "Captivating ramblings about tech, hosting, and life",
-            "url": "https://blog.unixfy.net",
-            "icon": "fas fa-rss",
-            "category": "Sites"
-        },
-        {
-            "title": "Docs",
-            "desc": "Documentation for services & tutorials",
-            "url": "https://docs.unixfy.net",
-            "icon": "fas fa-book",
-            "category": "Sites"
-        },
-        {
-            "title": "Alex-Wang.net",
-            "desc": "Is Unixfy a person? Perhaps 😉",
-            "url": "https://alex-wang.net",
-            "icon": "fas fa-smile",
-            "category": "Sites"
-        },
-        {
             "title": "GambitProfit",
             "desc": "A data portal for past Gambit plays",
             "url": "https://gambitprofit.com",
