@@ -41,7 +41,7 @@
 }
 
 .cta-heading {
-    @apply sm:text-3xl md:text-4xl lg:text-5xl text-2xl font-display mb-4 font-semibold
+    @apply sm:text-3xl md:text-4xl text-2xl font-display mb-4 font-semibold
 }
 
 /*CSS gradient animation*/
