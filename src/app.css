@@ -31,6 +31,10 @@
     @apply sm:text-4xl md:text-5xl lg:text-6xl text-3xl font-display mb-4 font-semibold
 }
 
+.section-subheading {
+    @apply text-xl md:text-3xl lg:text-4xl mb-4 font-light
+}
+
 .section {
     @apply py-12
 }
