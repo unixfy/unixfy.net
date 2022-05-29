@@ -28,7 +28,7 @@
 
 /*Section elements*/
 .section-heading {
-    @apply sm:text-4xl md:text-5xl lg:text-6xl text-3xl font-display mb-4 md:mb-8 font-medium
+    @apply sm:text-4xl md:text-5xl lg:text-6xl text-3xl font-display mb-4 md:mb-8 font-semibold
 }
 
 .section {
