@@ -113,20 +113,4 @@
     </div>
 </div>
 
-<div class="h-2/3 bg-[#7E1F86] text-white py-12">
-    <div class="ct cta">
-        <div class="grid grid-cols-1 sm:grid-cols-3">
-            <div class="sm:col-span-2 my-auto">
-                <h1 class="cta-heading">Looking for services?</h1>
-                <p class="text-lg">Including web hosting, web dev, and much more.</p>
-            </div>
-            <div class="sm:my-auto flow-root mt-4">
-                <a class="button sm:float-right" href="{$url('/services')}">
-                    View Services
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-
 <!-- routify:options title="Home" -->
