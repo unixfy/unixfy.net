@@ -16,7 +16,7 @@
 }
 
 .what-i-do-card {
-    @apply rounded border bg-slate-100 p-4 dark:text-white dark:bg-slate-800 hover:bg-gradient-to-tr shadow-md hover:from-[#7BC6CC] hover:to-[#BE93C5] hover:scale-110 transition-all hover:text-white bg-animate
+    @apply rounded border border-slate-100 bg-slate-50 p-8 dark:text-white dark:bg-slate-800 hover:bg-gradient-to-tr shadow-md hover:from-[#7BC6CC] hover:to-[#BE93C5] md:hover:scale-110 transition-all hover:text-white bg-animate
 }
 
 /*Page wrapper to auto set padding & background colors for darkmode*/

@@ -105,27 +105,37 @@
 <div class="bg-white text-black dark:bg-slate-900 dark:text-white section">
     <div class="ct">
         <h2 class="section-heading">
-            Hosting
+            What I Do
         </h2>
-        <p class="section-subheading">test</p>
+        <div class="grid grid-cols-1 md:grid-rows-2 md:grid-cols-2 gap-8 mt-8">
+            <div class="what-i-do-card">
+                <i class="fas fa-globe-africa fa-2x p-3 bg-blue-500/90 text-white rounded mb-4"></i>
+                <p class="text-2xl font-semibold">Web Design</p>
+                <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sem lorem, ultricies a
+                    libero eget,
+                    tincidunt rhoncus magna. Nullam quis velit quis magna consequat bibendum id et libero. In dignissim
+                    laoreet ullamcorper. Nulla nec tellus at risus malesuada tempor porta eu nibh. Mauris eu augue ut
+                    felis pretium ultrices id eget dui.</p>
+                <p class="text-lg text-white"><a class="bg-blue-500/90 py-1 px-2 rounded" href="{$url('/services')}">Learn more <i class="fas fa-chevron-right"></i></a></p>
+            </div>
+            <div class="what-i-do-card">
+
+            </div>
+            <div class="what-i-do-card">
+
+            </div>
+            <div class="what-i-do-card">
+
+            </div>
+        </div>
     </div>
 </div>
-
-<div class="bg-[#7E1F86] text-white section">
-    <div class="ct py-12 sm:py-16">
-        <h2 class="section-heading">
-            Development
-        </h2>
-    </div>
-</div>
-
 
 <!--This one uses UIGradients Clear Sky in dark mode and UIGradients Dania in light mode -->
-<div class="bg-gradient-to-tr from-[#7BC6CC] to-[#BE93C5] dark:from-[#005C97] dark:to-[#363795] text-white bg-animate section"
+<div class="bg-[#7E1F86] text-white section"
      id="jumper">
     <div class="ct">
-        <h1 class="section-heading">Hosted Apps & Sites</h1>
-        <div class="bg-white border"></div>
+        <h1 class="section-heading">Things I Maintain</h1>
         <div class="my-4 md:my-8">
             <AppJumper/>
         </div>
