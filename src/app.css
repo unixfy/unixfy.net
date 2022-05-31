@@ -20,7 +20,7 @@
 }
 
 .technologies-in-use-card {
-
+    @apply p-4 bg-slate-50 border-slate-100 dark:bg-slate-800 dark:border-slate-700 rounded grayscale hover:grayscale-0 transition-all flex text-black dark:text-white justify-center items-center
 }
 
 /*Page wrapper to auto set padding & background colors for darkmode*/
