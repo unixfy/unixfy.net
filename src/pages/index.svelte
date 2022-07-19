@@ -111,7 +111,7 @@
             <div class="what-i-do-card">
                 <div><i class="fas fa-globe-africa fa-2x p-3 bg-blue-500/90 text-white rounded mb-4"></i></div>
                 <p class="text-2xl font-semibold">Web Design</p>
-                <p class="mt-4 mb-5">Customized design that unifies content with a focus on smoothness and
+                <p class="my-4">Customized design that unifies content with a focus on smoothness and
                     usability.</p>
                 <!-- <p class="text-lg text-white"><a
                         class="bg-blue-500/90 hover:bg-blue-400/90 py-1 px-2 rounded transition-all"
@@ -121,7 +121,7 @@
             <div class="what-i-do-card">
                 <div><i class="fas fa-code fa-2x p-3 bg-blue-500/90 text-white rounded mb-4"></i></div>
                 <p class="text-2xl font-semibold">Web Development</p>
-                <p class="mt-4 mb-5">Bespoke solutions using modern technology to deliver exciting, performant
+                <p class="my-4">Bespoke solutions using modern technology to deliver exciting, performant
                     experiences on the web.</p>
                 <!-- <p class="text-lg text-white mt-auto"><a
                         class="bg-blue-500/90 hover:bg-blue-400/90 py-1 px-2 rounded transition-all"
@@ -131,7 +131,7 @@
             <div class="what-i-do-card">
                 <div><i class="fas fa-server fa-2x p-3 bg-blue-500/90 text-white rounded mb-4"></i></div>
                 <p class="text-2xl font-semibold">Server Administration</p>
-                <p class="mt-4 mb-5">Securing, maintaining, monitoring, and updating Linux/Windows systems, including
+                <p class="my-4">Securing, maintaining, monitoring, and updating Linux/Windows systems, including
                     critical systems onboard (Active Directory, Kubernetes, etc.).</p>
                 <!-- <p class="text-lg text-white mt-auto"><a
                         class="bg-blue-500/90 hover:bg-blue-400/90 py-1 px-2 rounded transition-all"
@@ -141,7 +141,7 @@
             <div class="what-i-do-card">
                 <div><i class="fas fa-database fa-2x p-3 bg-blue-500/90 text-white rounded mb-4"></i></div>
                 <p class="text-2xl font-semibold">Hosting</p>
-                <p class="mt-4 mb-5">High-performance, supported hosting to get applications online - and
+                <p class="my-4">High-performance, supported hosting to get applications online - and
                     ensure they stay online.</p>
                 <!-- <p class="text-lg text-white mt-auto"><a
                         class="bg-blue-500/90 hover:bg-blue-400/90 py-1 px-2 rounded transition-all"
