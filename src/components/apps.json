@@ -47,13 +47,6 @@
             "category": "Sites"
         },
         {
-            "title": "YieldBread",
-            "desc": "A student blog about making money online",
-            "url": "https://yieldbread.com",
-            "icon": "fas fa-money-bill-wave",
-            "category": "Sites"
-        },
-        {
             "title": "Support",
             "desc": "Get help with Unixfy.net services",
             "url": "https://unixfy-support.refined.site",
