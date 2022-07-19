@@ -105,7 +105,7 @@
 <div class="bg-white text-black dark:bg-slate-900 dark:text-white section">
     <div class="ct">
         <h1 class="section-heading">
-            What I Do
+            What I Know
         </h1>
         <div class="grid grid-cols-1 grid-rows-4 md:grid-rows-2 md:grid-cols-2 gap-8 mt-8">
             <div class="what-i-do-card">
@@ -141,7 +141,7 @@
             <div class="what-i-do-card">
                 <div><i class="fas fa-database fa-2x p-3 bg-blue-500/90 text-white rounded mb-4"></i></div>
                 <p class="text-2xl font-semibold">Hosting</p>
-                <p class="mt-4 mb-5">Premium, high-performance, supported hosting to get applications online - and
+                <p class="mt-4 mb-5">High-performance, supported hosting to get applications online - and
                     ensure they stay online.</p>
                 <p class="text-lg text-white mt-auto"><a
                         class="bg-blue-500/90 hover:bg-blue-400/90 py-1 px-2 rounded transition-all"
