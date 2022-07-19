@@ -5,7 +5,7 @@
 
 <div class="page-wrapper">
     <div class="ct">
-        <PageHeader title="UnixfyHosting" content="Providing bespoke, rock-solid, awesome hosting services."/>
+        <PageHeader title="Hosting" content="Providing bespoke, awesome non-profit hosting services."/>
 
         <!--    Priicng table-->
         <HostingPricingMatrix />
