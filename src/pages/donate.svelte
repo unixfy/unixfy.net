@@ -1,12 +1,16 @@
 <script>
     import PageHeader from "../components/PageHeader.svelte";
     import {url} from "@roxi/routify";
+    import { metatags } from '@roxi/routify'
+
+    // hide from archive/google
+    metatags.robots = "noindex"
 </script>
 
 <div class="page-wrapper">
     <div class="ct">
         <PageHeader title="Donate 🎉"
-                    content="Do you appreciate my work? I would appreciate your donation! Even a dollar or two helps."/>
+                    content="If you appreciate the stuff I do."/>
 
         <div class="mb-8">
             <h2 class="text-2xl md:text-3xl lg:text-4xl font-display mb-4"><i class="fab fa-paypal"></i> PayPal</h2>
