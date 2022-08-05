@@ -140,9 +140,8 @@
             </div>
             <div class="what-i-do-card">
                 <div><i class="fas fa-database fa-2x p-3 bg-blue-500/90 text-white rounded mb-4"></i></div>
-                <p class="text-2xl font-semibold">Hosting</p>
-                <p class="my-4">High-performance, supported hosting to get applications online - and
-                    ensure they stay online.</p>
+                <p class="text-2xl font-semibold">DevOps</p>
+                <p class="my-4">High-velocity application deployment to get things online - and keep them that way.</p>
                 <!-- <p class="text-lg text-white mt-auto"><a
                         class="bg-blue-500/90 hover:bg-blue-400/90 py-1 px-2 rounded transition-all"
                         href="{$url('/hosting')}">Learn more <i
