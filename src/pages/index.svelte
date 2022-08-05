@@ -62,7 +62,7 @@
                 <h2 class="cta-heading mb-4">
                     <i class="fas fa-book"></i> Docs
                 </h2>
-                <p class="text-xl sm:text-2xl">Tutorials and resources for services.</p>
+                <p class="text-xl sm:text-2xl">Various tutorials and resources.</p>
             </div>
         </div>
     </a>
