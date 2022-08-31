@@ -45,28 +45,26 @@
         </div>
 
         <div class="mb-8">
-            <h2 class="text-2xl md:text-3xl lg:text-4xl font-display mb-4"><i class="fas fa-coins"></i> CoinPayments.net
-            </h2>
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-display mb-4"><i class="fas fa-money-bill"></i> Venmo</h2>
             <div class="p-4 border border-blue-500 rounded mb-4">
-                <p class="mb-2"><span class="font-bold">Accepted currencies:</span> 50+ cryptocurrencies accepted,
-                    including various ERC20 tokens.</p>
-                <p><span class="font-bold italic">Use only if your preferred payment method isn't available through PayPal or Coinbase Commerce.</span>
-                </p>
+                <p class="mb-2"><span class="font-bold">Payment methods:</span> Bank account, Visa, Discover, American Express, MasterCard, Venmo balance</p>
+                <p>Please reach out if verification is required.</p>
             </div>
-            <!--            Coinpayments donation button -->
-            <form action="https://www.coinpayments.net/index.php" method="post" target="_blank">
-                <input type="hidden" name="cmd" value="_donate">
-                <input type="hidden" name="reset" value="1">
-                <input type="hidden" name="merchant" value="7f855825350c1a5e2799a75b15315b42">
-                <input type="hidden" name="item_name" value="Unixfy.net Donation - THANK YOU!">
-                <input type="hidden" name="allow_currency" value="1">
-                <input type="hidden" name="currency" value="USD">
-                <input type="hidden" name="amountf" value="1.00000000">
-                <input type="hidden" name="quantity" value="1">
-                <input type="hidden" name="want_shipping" value="0">
-                <input type="image" src="https://www.coinpayments.net/images/pub/buynow-blue.png"
-                       alt="Donate Now with CoinPayments.net">
-            </form>
+            <a href="https://venmo.com/code?user_id=2816232529068032206" rel="noreferrer" target="_blank">
+                <div class="button">Donate with Venmo</div>
+            </a>
+
+        </div>
+
+        <div class="mb-8">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-display mb-4"><i class="fas fa-dollar-sign"></i> CashApp</h2>
+            <div class="p-4 border border-blue-500 rounded mb-4">
+                <p><span class="font-bold">Payment methods:</span> Bank account, Visa, Discover, American Express, MasterCard, CashApp balance, Stock, Bitcoin</p>
+            </div>
+            <a href="https://cash.app/$axwang64" rel="noreferrer" target="_blank">
+                <div class="button">Donate with CashApp</div>
+            </a>
+
         </div>
 
         <div class="mb-8">
