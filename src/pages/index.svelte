@@ -11,7 +11,7 @@
         <div class="jumbo-bg h-[30vh] sm:h-[28vh] md:h-[100vh] absolute top-[3rem] md:bottom-0 right-0 w-full md:w-[40%] -z-[1]"></div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 flex">
             <div class="text-center md:text-left">
-                <h1 class="text-5xl sm:text-6xl md:text-[3.5rem] lg:text-7xl font-display font-semibold">
+                <h1 class="text-5xl sm:text-6xl md:text-[3.5rem] lg:text-7xl font-display font-medium">
                     <span class="block pb-4">
                         Digital infrastructure
                             <span class="bg-gradient-to-tr from-[#7BC6CC] to-[#BE93C5] bg-clip-text text-transparent font-bold">
