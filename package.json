@@ -42,7 +42,7 @@
     "spassr": "^2.4.1-0",
     "svelte": "^3.49.0",
     "svelte-hmr": "^0.14.4",
-    "svelte-preprocess": "^4.10.1",
+    "svelte-preprocess": "^5.0.0",
     "tailwindcss": "^3.0.7",
     "vite": "^2.9.13",
     "vite-main-js": "^0.0.1",
