@@ -27,7 +27,7 @@
   "devDependencies": {
     "@fontsource/ibm-plex-sans": "^4.5.10",
     "@fontsource/space-grotesk": "^4.5.8",
-    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@fortawesome/fontawesome-free": "^6.2.1",
     "@roxi/routify": "^2.14.0",
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.10",
     "autoprefixer": "^10.4.0",
