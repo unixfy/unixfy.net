@@ -67,11 +67,11 @@
         </div>
     </a>
 
-    <a href="https://alex-wang.net/" rel="noopener" target="_blank">
+    <a href="https://alexwang.net/" rel="noopener" target="_blank">
         <div class="text-center sm:text-left py-6 sm:py-10 bg-gradient-to-r from-[#56B4D3] to-[#348F50] text-white hover:opacity-90">
             <div class="ct">
                 <h2 class="cta-heading mb-4">
-                    <i class="fas fa-smile"></i> alex-wang.net
+                    <i class="fas fa-smile"></i> alexwang.net
                 </h2>
                 <p class="text-xl sm:text-2xl">Learn something more about me.</p>
             </div>
