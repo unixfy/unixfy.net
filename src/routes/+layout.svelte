@@ -11,6 +11,10 @@
     import "@fontsource/ibm-plex-sans/500.css"
     import "@fontsource/ibm-plex-sans/600.css"
     import "@fontsource/ibm-plex-sans/700.css"
+
+    // Fontawesome
+    import "fontawesome-free/css/all.min.css"
+
     import {page} from "$app/stores";
     import Navbar from "$lib/Navbar.svelte";
     import Footer from "$lib/Footer.svelte";
