@@ -12,6 +12,8 @@
     import "@fontsource/ibm-plex-sans/600.css"
     import "@fontsource/ibm-plex-sans/700.css"
     import {page} from "$app/stores";
+    import Navbar from "$lib/Navbar.svelte";
+    import Footer from "$lib/Footer.svelte";
 </script>
 
 <svelte:head>
@@ -37,5 +39,7 @@
 </noscript>
 
 <div class="min-h-screen">
+    <Navbar/>
     <slot/>
+    <Footer/>
 </div>
