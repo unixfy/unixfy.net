@@ -17,6 +17,7 @@
 <svelte:head>
     <title>{(($page.error) ? "Error" : $page.data.title || "Welcome")} | Unixfy.net</title>
 
+    <meta name="og:title" content="{(($page.error) ? 'Error' : $page.data.title || 'Welcome')} | Unixfy.net">
     <meta name="theme-color" content="#2196F3"/>
     <link rel="apple-touch-icon" href="/images/largeicon.png"/>
     <meta name="twitter:image" content="/assets/img/largeicon.png">
