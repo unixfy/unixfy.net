@@ -1,10 +1,8 @@
 <script>
-    import {isActive, layout, url} from "@roxi/routify";
     import {onMount} from 'svelte';
     import {darkmode} from "../stores";
     import {fly} from 'svelte/transition';
-
-    export let navitems = $layout.children
+    import {browser} from "$app/environment";
 
     let mobilemenu = false;
 
@@ -26,7 +24,7 @@
     }
 
     onMount(async () => {
-        if (window.routify.inBrowser) {
+        if (browser) {
             // Enable darkmode automatically if it's saved in localstorage
             if ($darkmode) {
                 document.documentElement.classList.add('dark');
@@ -71,7 +69,7 @@
             <!--            Desktop navbar -->
             <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="{$url('/')}">
+                    <a href="/">
                         <!--                        Lightmode logo -->
                         {#if !$darkmode}
                             <img class="block h-8 w-auto" src="/images/logo-cropped.svg" alt="Unixfy.net">
@@ -83,19 +81,12 @@
                 </div>
                 <div class="hidden sm:block sm:ml-6 float-right">
                     <div class="flex space-x-4 items-center">
-                        {#each navitems as {path, title, children, meta, ...rest}}
-                            {#if !(meta.hidden)}
-                                {#if $isActive(path)}
-                                    <a href="{$url(path)}"
-                                       class="bg-gray-900 dark:bg-gray-100 text-white dark:text-black px-3 py-2 rounded-md text-sm font-medium"
-                                       aria-current="page">{toTitlecase(title)}</a>
-                                {:else}
-                                    <a href="{$url(path)}"
-                                       class="text-gray-600 dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-                                        {toTitlecase(title)}</a>
-                                {/if}
-                            {/if}
-                        {/each}
+                        <a href="/"
+                           class="bg-gray-900 dark:bg-gray-100 text-white dark:text-black px-3 py-2 rounded-md text-sm font-medium"
+                           aria-current="page">{toTitlecase("blah")}</a>
+                        <a href="/"
+                           class="text-gray-600 dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                            {toTitlecase("blah")}</a>
                     </div>
                 </div>
             </div>
@@ -115,19 +106,12 @@
         {#if mobilemenu}
             <div class="sm:hidden" id="mobile-menu" transition:fly="{{ x: -200, duration: 500 }}">
                 <div class="px-2 pt-2 pb-3 space-y-1">
-                    {#each navitems as {path, title, children, meta, ...rest}}
-                        {#if !(meta.hidden)}
-                            {#if $isActive(path)}
-                                <a href="{$url(path)}"
-                                   class="bg-gray-900 dark:bg-gray-100 text-white dark:text-black px-3 py-2 block rounded-md text-base font-medium"
-                                   aria-current="page">{toTitlecase(title)}</a>
-                            {:else}
-                                <a href="{$url(path)}"
-                                   class="text-gray-600 dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base block font-medium">
-                                    {toTitlecase(title)}</a>
-                            {/if}
-                        {/if}
-                    {/each}
+                    <a href="/"
+                       class="bg-gray-900 dark:bg-gray-100 text-white dark:text-black px-3 py-2 block rounded-md text-base font-medium"
+                       aria-current="page">{toTitlecase("blah")}</a>
+                    <a href="/"
+                       class="text-gray-600 dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base block font-medium">
+                        {toTitlecase("blah")}</a>
                 </div>
             </div>
         {/if}
