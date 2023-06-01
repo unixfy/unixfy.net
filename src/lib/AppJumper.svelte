@@ -1,6 +1,5 @@
 <script>
     import Card from "./Card.svelte";
-    import {ready} from "@roxi/routify";
     import * as appjumperData from './apps.json'
 
     // We fill this in later
@@ -21,7 +20,6 @@
 
         // We call $ready(); here so that Spank doesn't start generating static pages until our API requests complete
         // That way the static pages will still be populated with data!
-        $ready();
     }
 
     // The app will await this promise
