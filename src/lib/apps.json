@@ -122,13 +122,6 @@
             "url": "https://zerotier.unixfy.net",
             "icon": "fas fa-ethernet",
             "category": "Apps"
-        },
-        {
-            "title": "My.Disulfi.De",
-            "desc": "Access your hosting account",
-            "url": "https://my.disulfi.de",
-            "icon": "fas fa-file-invoice",
-            "category": "Services"
         }
     ]
 }
