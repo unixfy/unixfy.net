@@ -1,8 +1,5 @@
 <script>
     import PageHeader from "$lib/PageHeader.svelte";
-
-    // hide from archive/google
-    // metatags.robots = "noindex"
 </script>
 
 <div class="page-wrapper">
