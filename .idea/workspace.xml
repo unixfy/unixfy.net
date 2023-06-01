@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="$DEVELOPMENT$" id="1734cddf-8fd1-45c2-b919-43a0ab7bea8b" name="Changes" comment="Fix missing padding on &lt;slot&gt;" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="$DEVELOPMENT$" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2QLzLwCB5VGHz3y6Lidxbn2CICh" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="$DEVELOPMENT$" />
+    <option name="showLibraryContents" value="$DEVELOPMENT$" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "sveltekit-rewrite",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "discord-project",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="$DEVELOPMENT$" transferred="$DEVELOPMENT$" />
+  <component name="TaskManager">
+    <task active="$DEVELOPMENT$" id="Default" summary="Default task">
+      <changelist id="1734cddf-8fd1-45c2-b919-43a0ab7bea8b" name="Changes" comment="" />
+      <created>1685147598895</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685147598895</updated>
+      <workItem from="1685147601722" duration="48000" />
+      <workItem from="1685147682634" duration="3000" />
+      <workItem from="1685147754872" duration="52000" />
+      <workItem from="1685147821358" duration="43000" />
+      <workItem from="1685147875099" duration="26000" />
+      <workItem from="1685147917416" duration="3523000" />
+      <workItem from="1685237285569" duration="594000" />
+      <workItem from="1685573806430" duration="2107000" />
+    </task>
+    <task id="LOCAL-00001" summary="Bootstrap new SvelteKit project">
+      <created>1685148131573</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685148131573</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Upload images from Routify version">
+      <created>1685148233443</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685148233443</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Install Tailwind">
+      <created>1685148424174</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685148424174</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Implement Fontsource fonts">
+      <created>1685148720525</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685148720525</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Implement &lt;head&gt; content from Routify site">
+      <created>1685148928743</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685148928743</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Implement dynamic og:title too">
+      <created>1685149003175</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685149003175</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fullheight the &lt;slot&gt; container">
+      <created>1685149032211</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1685149032211</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Try to implement tsparticles and error page?">
+      <created>1685149598787</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1685149598787</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Copy components from Routify site">
+      <created>1685149772310</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1685149772310</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Remove Routify references in Navbar.svelte">
+      <created>1685149921693</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1685149921693</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Copy over stylesheets from Routify site">
+      <created>1685152567658</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1685152567658</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Install Fontawesome icons">
+      <created>1685152584606</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1685152584606</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Copy over routes from Routify version">
+      <created>1685580449277</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1685580449277</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Fix missing padding on &lt;slot&gt;">
+      <created>1685580736914</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1685580736914</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="$DEVELOPMENT$" />
+    <MESSAGE value="Bootstrap new SvelteKit project" />
+    <MESSAGE value="Upload images from Routify version" />
+    <MESSAGE value="Install Tailwind" />
+    <MESSAGE value="Implement Fontsource fonts" />
+    <MESSAGE value="Implement &lt;head&gt; content from Routify site" />
+    <MESSAGE value="Implement dynamic og:title too" />
+    <MESSAGE value="Fullheight the &lt;slot&gt; container" />
+    <MESSAGE value="Try to implement tsparticles and error page?" />
+    <MESSAGE value="Copy components from Routify site" />
+    <MESSAGE value="Remove Routify references in Navbar.svelte" />
+    <MESSAGE value="Copy over stylesheets from Routify site" />
+    <MESSAGE value="Install Fontawesome icons" />
+    <MESSAGE value="Copy over routes from Routify version" />
+    <MESSAGE value="Fix missing padding on &lt;slot&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix missing padding on &lt;slot&gt;" />
+  </component>
+</project>

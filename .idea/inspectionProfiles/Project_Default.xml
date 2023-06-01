@@ -1,0 +1,21 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="Eslint" enabled="$DEVELOPMENT$" level="WARNING" enabled_by_default="$DEVELOPMENT$" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="$DEVELOPMENT$" level="WARNING" enabled_by_default="$DEVELOPMENT$">
+      <option name="ignoredPackages">
+        <value>
+          <list size="7">
+            <item index="0" class="java.lang.String" itemvalue="selenium" />
+            <item index="1" class="java.lang.String" itemvalue="certifi" />
+            <item index="2" class="java.lang.String" itemvalue="charset-normalizer" />
+            <item index="3" class="java.lang.String" itemvalue="2captcha-python" />
+            <item index="4" class="java.lang.String" itemvalue="requests" />
+            <item index="5" class="java.lang.String" itemvalue="urllib3" />
+            <item index="6" class="java.lang.String" itemvalue="idna" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
