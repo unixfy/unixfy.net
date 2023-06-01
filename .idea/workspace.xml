@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="$DEVELOPMENT$" id="1734cddf-8fd1-45c2-b919-43a0ab7bea8b" name="Changes" comment="Fix missing padding on &lt;slot&gt;" />
+    <list default="$DEVELOPMENT$" id="1734cddf-8fd1-45c2-b919-43a0ab7bea8b" name="Changes" comment="Add JetBrains config files">
+      <change afterPath="$PROJECT_DIR$/src/routes/+page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/contact/+page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/discord/+page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/donate/+page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="$DEVELOPMENT$" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +43,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "sveltekit-rewrite",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/unixfy/PycharmProjects/unixfy.net/src/routes/donate",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -46,6 +53,13 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\unixfy\PycharmProjects\unixfy.net\src\routes\donate" />
+      <recent name="C:\Users\unixfy\PycharmProjects\unixfy.net\src\routes\discord" />
+      <recent name="C:\Users\unixfy\PycharmProjects\unixfy.net\src\routes\contact" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="$DEVELOPMENT$" transferred="$DEVELOPMENT$" />
   <component name="TaskManager">
     <task active="$DEVELOPMENT$" id="Default" summary="Default task">
@@ -61,7 +75,7 @@
       <workItem from="1685147875099" duration="26000" />
       <workItem from="1685147917416" duration="3523000" />
       <workItem from="1685237285569" duration="594000" />
-      <workItem from="1685573806430" duration="2107000" />
+      <workItem from="1685573806430" duration="2220000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap new SvelteKit project">
       <created>1685148131573</created>
@@ -161,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685580736914</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add JetBrains config files">
+      <created>1685580760989</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1685580760989</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +215,7 @@
     <MESSAGE value="Install Fontawesome icons" />
     <MESSAGE value="Copy over routes from Routify version" />
     <MESSAGE value="Fix missing padding on &lt;slot&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix missing padding on &lt;slot&gt;" />
+    <MESSAGE value="Add JetBrains config files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add JetBrains config files" />
   </component>
 </project>
