@@ -44,6 +44,8 @@
 
 <div class="min-h-screen">
     <Navbar/>
-    <slot/>
+    <div class="pt-[3rem]">
+        <slot/>
+    </div>
     <Footer/>
 </div>
