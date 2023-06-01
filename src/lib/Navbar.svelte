@@ -6,15 +6,6 @@
 
     let mobilemenu = false;
 
-    let toTitlecase = function (str) {
-        return str.replace(
-            /\w\S*/g,
-            function (txt) {
-                return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-            }
-        );
-    }
-
     let toggleDarkMode = function () {
         $darkmode = !($darkmode)
     }
@@ -82,11 +73,14 @@
                 <div class="hidden sm:block sm:ml-6 float-right">
                     <div class="flex space-x-4 items-center">
                         <a href="/"
-                           class="bg-gray-900 dark:bg-gray-100 text-white dark:text-black px-3 py-2 rounded-md text-sm font-medium"
-                           aria-current="page">{toTitlecase("blah")}</a>
-                        <a href="/"
                            class="text-gray-600 dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-                            {toTitlecase("blah")}</a>
+                            Home</a>
+                        <a href="/network"
+                           class="text-gray-600 dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                            Network</a>
+                        <a href="/contact"
+                           class="text-gray-600 dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                            Contact</a>
                     </div>
                 </div>
             </div>
@@ -107,11 +101,14 @@
             <div class="sm:hidden" id="mobile-menu" transition:fly="{{ x: -200, duration: 500 }}">
                 <div class="px-2 pt-2 pb-3 space-y-1">
                     <a href="/"
-                       class="bg-gray-900 dark:bg-gray-100 text-white dark:text-black px-3 py-2 block rounded-md text-base font-medium"
-                       aria-current="page">{toTitlecase("blah")}</a>
-                    <a href="/"
                        class="text-gray-600 dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base block font-medium">
-                        {toTitlecase("blah")}</a>
+                        Home</a>
+                    <a href="/network"
+                       class="text-gray-600 dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base block font-medium">
+                        Network</a>
+                    <a href="/contact"
+                       class="text-gray-600 dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base block font-medium">
+                        Contact</a>
                 </div>
             </div>
         {/if}

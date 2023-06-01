@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="$DEVELOPMENT$" id="1734cddf-8fd1-45c2-b919-43a0ab7bea8b" name="Changes" comment="Add titles to all pages">
+    <list default="$DEVELOPMENT$" id="1734cddf-8fd1-45c2-b919-43a0ab7bea8b" name="Changes" comment="Implement noIndex">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/discord/+page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/discord/+page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/donate/+page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/donate/+page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/Navbar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Navbar.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="$DEVELOPMENT$" />
@@ -74,7 +72,7 @@
       <workItem from="1685147875099" duration="26000" />
       <workItem from="1685147917416" duration="3523000" />
       <workItem from="1685237285569" duration="594000" />
-      <workItem from="1685573806430" duration="2615000" />
+      <workItem from="1685573806430" duration="2782000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap new SvelteKit project">
       <created>1685148131573</created>
@@ -188,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685580925121</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Implement noIndex">
+      <created>1685581278081</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1685581278081</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +228,7 @@
     <MESSAGE value="Fix missing padding on &lt;slot&gt;" />
     <MESSAGE value="Add JetBrains config files" />
     <MESSAGE value="Add titles to all pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add titles to all pages" />
+    <MESSAGE value="Implement noIndex" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement noIndex" />
   </component>
 </project>
