@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="$DEVELOPMENT$" id="1734cddf-8fd1-45c2-b919-43a0ab7bea8b" name="Changes" comment="Implement noIndex">
+    <list default="$DEVELOPMENT$" id="1734cddf-8fd1-45c2-b919-43a0ab7bea8b" name="Changes" comment="Close mobile menu when user clicks on a link">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/Navbar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Navbar.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+error.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+error.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="$DEVELOPMENT$" />
@@ -40,18 +43,20 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "sveltekit-rewrite",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/unixfy/PycharmProjects/unixfy.net/src/routes/donate",
+    "last_opened_file_path": "C:/Users/unixfy/PycharmProjects/unixfy.net/src/routes/network",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "discord-project",
+    "ts.external.directory.path": "C:\\Users\\unixfy\\PycharmProjects\\unixfy.net\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\unixfy\PycharmProjects\unixfy.net\src\routes\network" />
       <recent name="C:\Users\unixfy\PycharmProjects\unixfy.net\src\routes\donate" />
       <recent name="C:\Users\unixfy\PycharmProjects\unixfy.net\src\routes\discord" />
       <recent name="C:\Users\unixfy\PycharmProjects\unixfy.net\src\routes\contact" />
@@ -72,7 +77,7 @@
       <workItem from="1685147875099" duration="26000" />
       <workItem from="1685147917416" duration="3523000" />
       <workItem from="1685237285569" duration="594000" />
-      <workItem from="1685573806430" duration="2782000" />
+      <workItem from="1685573806430" duration="4226000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap new SvelteKit project">
       <created>1685148131573</created>
@@ -193,7 +198,63 @@
       <option name="project" value="LOCAL" />
       <updated>1685581278081</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Clean up navbar">
+      <created>1685581444382</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1685581444382</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Remove hacky promise in AppJumper.svelte">
+      <created>1685585134620</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1685585134620</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Remove Hosting Pricing Matrix component">
+      <created>1685585172078</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1685585172078</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Titlecase mobileMenu in Navbar">
+      <created>1685585195663</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1685585195663</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Remove unnecessary comment">
+      <created>1685585224492</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1685585224492</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Forgot to give page title to /network?">
+      <created>1685585253320</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1685585253320</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Remove my.disulfi.de">
+      <created>1685585337015</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1685585337015</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Close mobile menu when user clicks on a link">
+      <created>1685585473390</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1685585473390</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +290,14 @@
     <MESSAGE value="Add JetBrains config files" />
     <MESSAGE value="Add titles to all pages" />
     <MESSAGE value="Implement noIndex" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement noIndex" />
+    <MESSAGE value="Clean up navbar" />
+    <MESSAGE value="Remove hacky promise in AppJumper.svelte" />
+    <MESSAGE value="Remove Hosting Pricing Matrix component" />
+    <MESSAGE value="Titlecase mobileMenu in Navbar" />
+    <MESSAGE value="Remove unnecessary comment" />
+    <MESSAGE value="Forgot to give page title to /network?" />
+    <MESSAGE value="Remove my.disulfi.de" />
+    <MESSAGE value="Close mobile menu when user clicks on a link" />
+    <option name="LAST_COMMIT_MESSAGE" value="Close mobile menu when user clicks on a link" />
   </component>
 </project>
