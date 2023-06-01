@@ -1,5 +1,6 @@
 export async function load() {
     return {
-        title: "Donate"
+        title: "Donate",
+        noIndex: true
     }
 }

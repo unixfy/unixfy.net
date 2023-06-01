@@ -1,5 +1,6 @@
 export async function load() {
     return {
-        title: "Discord"
+        title: "Discord",
+        noIndex: true
     }
 }

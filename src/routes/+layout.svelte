@@ -34,6 +34,10 @@
     <meta name="twitter:title" content="Unixfy.net">
     <meta property="og:image" content="/assets/img/largeicon.png">
     <link rel="icon" type="image/png" sizes="1000x1000" href="/images/largeicon.png">
+
+    {#if $page.data.noIndex}
+        <meta name="robots" content="noindex, nofollow"/>
+    {/if}
 </svelte:head>
 
 <noscript>
