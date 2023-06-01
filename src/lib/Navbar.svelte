@@ -4,14 +4,14 @@
     import {fly} from 'svelte/transition';
     import {browser} from "$app/environment";
 
-    let mobilemenu = false;
+    let mobileMenu = false;
 
     let toggleDarkMode = function () {
         $darkmode = !($darkmode)
     }
 
     let toggleMobileMenu = function () {
-        mobilemenu = !mobilemenu
+        mobileMenu = !mobileMenu
     }
 
     onMount(async () => {
@@ -34,9 +34,9 @@
                 <!-- Mobile menu button-->
                 <button type="button"
                         class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700"
-                        aria-controls="mobile-menu" aria-expanded="{mobilemenu}" on:click={toggleMobileMenu}>
+                        aria-controls="mobile-menu" aria-expanded="{mobileMenu}" on:click={toggleMobileMenu}>
                     <span class="sr-only">Open main menu</span>
-                    {#if mobilemenu}
+                    {#if mobileMenu}
                         <!--
                           Icon when menu is open.
 
@@ -97,7 +97,7 @@
         </div>
 
         <!-- Mobile menu, show/hide based on menu state. -->
-        {#if mobilemenu}
+        {#if mobileMenu}
             <div class="sm:hidden" id="mobile-menu" transition:fly="{{ x: -200, duration: 500 }}">
                 <div class="px-2 pt-2 pb-3 space-y-1">
                     <a href="/"
