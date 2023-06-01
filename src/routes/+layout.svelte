@@ -33,6 +33,9 @@
                 },
                 onRegisterError(error) {
                     console.log('SW registration error', error)
+                },
+                onOfflineReady() {
+                    console.log('SW ready for offline')
                 }
             })
         }
