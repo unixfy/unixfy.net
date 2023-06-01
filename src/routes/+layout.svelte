@@ -18,6 +18,7 @@
     import {page} from "$app/stores";
     import Navbar from "$lib/Navbar.svelte";
     import Footer from "$lib/Footer.svelte";
+    import {browser, dev} from "$app/environment";
 </script>
 
 <svelte:head>
@@ -37,6 +38,10 @@
 
     {#if $page.data.noIndex}
         <meta name="robots" content="noindex, nofollow"/>
+    {/if}
+
+    {#if !dev && browser}
+        <link rel="manifest" href="/manifest.webmanifest"/>
     {/if}
 </svelte:head>
 
