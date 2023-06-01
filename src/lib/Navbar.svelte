@@ -101,13 +101,13 @@
             <div class="sm:hidden" id="mobile-menu" transition:fly="{{ x: -200, duration: 500 }}">
                 <div class="px-2 pt-2 pb-3 space-y-1">
                     <a href="/"
-                       class="text-gray-600 dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base block font-medium">
+                       class="text-gray-600 dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base block font-medium" on:click={toggleMobileMenu}>
                         Home</a>
                     <a href="/network"
-                       class="text-gray-600 dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base block font-medium">
+                       class="text-gray-600 dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base block font-medium" on:click={toggleMobileMenu}>
                         Network</a>
                     <a href="/contact"
-                       class="text-gray-600 dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base block font-medium">
+                       class="text-gray-600 dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base block font-medium" on:click={toggleMobileMenu}>
                         Contact</a>
                 </div>
             </div>
