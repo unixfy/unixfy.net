@@ -1,6 +1,7 @@
 <component name="InspectionProjectProfileManager">
   <profile version="1.0">
     <option name="myName" value="Project Default" />
+    <inspection_tool class="Eslint" enabled="$DEVELOPMENT$" level="WARNING" enabled_by_default="$DEVELOPMENT$" />
     <inspection_tool class="PyPackageRequirementsInspection" enabled="$DEVELOPMENT$" level="WARNING" enabled_by_default="$DEVELOPMENT$">
       <option name="ignoredPackages">
         <value>
