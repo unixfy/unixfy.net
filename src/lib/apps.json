@@ -103,13 +103,6 @@
             "category": "Apps"
         },
         {
-            "title": "Link Shortener",
-            "desc": "go.unixfy.net/yourlinkhere",
-            "url": "https://app.shlink.io",
-            "icon": "fas fa-link",
-            "category": "Apps"
-        },
-        {
             "title": "S3",
             "desc": "Securely store files with a robust API",
             "url": "https://s3-console.unixfy.net",
