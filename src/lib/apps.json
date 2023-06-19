@@ -47,6 +47,27 @@
             "category": "Sites"
         },
         {
+            "title": "ITE USC",
+            "desc": "Transportation engineering at USC",
+            "url": "https://new.iteusc.com",
+            "icon": "fas fa-subway",
+            "category": "Sites"
+        },
+        {
+            "title": "ISCMM",
+            "desc": "Interactive SoCal Mobility Map",
+            "url": "https://iscmm.unixfy.net",
+            "icon": "fas fa-project-diagram",
+            "category": "Sites"
+        },
+        {
+            "title": "Blog",
+            "desc": "Capitvating ramblings",
+            "url": "https://blog.unixfy.net",
+            "icon": "fas fa-rss",
+            "category": "Sites"
+        },
+        {
             "title": "Support",
             "desc": "Get help with Unixfy.net",
             "url": "https://unixfy-support.refined.site",
