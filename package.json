@@ -15,7 +15,7 @@
 		"@fontsource/ibm-plex-sans": "^5.0.3",
 		"@fontsource/space-grotesk": "^5.0.3",
 		"@sveltejs/adapter-auto": "^2.0.0",
-		"@sveltejs/kit": "^1.20.5",
+		"@sveltejs/kit": "^1.21.0",
 		"@vite-pwa/sveltekit": "^0.2.5",
 		"autoprefixer": "^10.4.14",
 		"eslint": "^8.43.0",
