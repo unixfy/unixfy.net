@@ -14,7 +14,7 @@
 	"devDependencies": {
 		"@fontsource/ibm-plex-sans": "^5.0.16",
 		"@fontsource/space-grotesk": "^5.0.14",
-		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/adapter-auto": "^2.1.1",
 		"@sveltejs/kit": "^1.26.0",
 		"@vite-pwa/sveltekit": "^0.2.7",
 		"autoprefixer": "^10.4.16",
