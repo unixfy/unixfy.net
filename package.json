@@ -16,7 +16,7 @@
 		"@fontsource/space-grotesk": "^5.0.15",
 		"@sveltejs/adapter-auto": "^2.1.1",
 		"@sveltejs/kit": "^1.27.3",
-		"@vite-pwa/sveltekit": "^0.2.7",
+		"@vite-pwa/sveltekit": "^0.2.8",
 		"autoprefixer": "^10.4.16",
 		"eslint": "^8.53.0",
 		"eslint-config-prettier": "^9.0.0",
